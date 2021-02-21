@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<!-- HEAD -->
+	<head>
+		<title>Tutorial da calculadora SUN - Constrói</title>
+		
+		<meta charset = "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- COMMON CSS FILE -->
+		<link rel = "stylesheet" href = "css/template.css">
+		<!-- PAGE CSS -->
+		<link rel = "stylesheet" href = "css/build.css">
+		
+		<!-- SCROLL UP BUTTON -->
+		<link rel = "stylesheet" href = "css/scrollUpBtn.css">
+		<script src = "js/scrollUp.js"></script>
+	</head>
+	<div id = "wrapper">
+	<!-- NAVIGATION -->	
+	<nav class = "navbar">
+		<a class = "navImage"><img src="img/Sun.png" width = "20" height = "20"></a>
+		<a href="index.html">Casa</a>
+		<div class="dropdown">
+			<button class = "dropbtn">Tutoriais &#9662;</button>
+			<div class = "dropdown-content">
+				<a href= "basics.html">Fundamentos</a>
+				<a href = "build.html">Constrói</a>
+			</div>
+		</div>
+		<a href = "license.html">Licença</a>
+		<a href = "contact.html">Contato</a>
+	</nav> 
+	<!-- BODY -->
+	<body>
+		<h3 id = "title">Criando construções de caracteres</h3>
+		<div id = "contents">
+		<p id = "contentsTitle">Conteúdo</p>
+		<ol>
+			<li><a href = "#selectClass">Selecionando uma turma</a></li>
+			<li><a href = "#editLevel">Editar nível</a></li>
+			<li><a href = "#editStats">Editar estatísticas</a></li>
+		</ol>
+		</div>
+		<!-- SELECT A CLASS -->
+		<h4 id = "selectClass">❈ Selecionando uma turma</h4>
+		<p> Para iniciar um personagem, o usuário deve selecionar uma classe. Role até a caixa suspensa na seção "Seleção de classe" e clique na seta para baixo. Um menu suspenso aparecerá e agora o usuário pode selecionar uma turma disponível.
+		<br><img src = "img/builds_selectClass.png" id = "contentImg" width = "220" height = "175">
+		<p> A subseção "Estatísticas adicionais" na seção principal "Informações do personagem" será atualizada para mostrar as estatísticas básicas do personagem selecionado, como mostrado abaixo.
+		<br><img src = "img/builds_charInfo.png" id = "contentImg" width = "600" height = "300">
+		</p>
+		</p>
+		<!-- EDIT STATS -->
+		<h4 id = "editLevel">❈ Editar nível</h4>
+		<p>Antes de o usuário começar a editar as estatísticas, ele deve editar o nível dentro da caixa na seção "Nível". O usuário pode clicar na caixa, pressionar 'Backspace' para remover o padrão '1', digite qualquer número de 1 a 195 e, em seguida, pressione 'Enter'. Pressionar 'Enter' ajustará as informações nas seções "Pontos extras" e "Estatísticas adicionais", como mostrado abaixo.
+		<br><img src = "img/builds_levelChanged.png" id = "contentImg" width = "600" height = "300">
+		</p>
+		<!-- EDIT STATS -->
+		<h4 id = "editStats">❈ Editar estatísticas</h4>
+		<p>O usuário pode editar as estatísticas na seção "Estatísticas", abaixo da seção "Nível", clicando dentro da caixa à direita da estatística correspondente. A partir daí, o usuário pode 'Backspace' dentro da caixa para remover qualquer número predefinido, digitar os números de sua escolha e pressionar 'Enter'. Pressionar 'Enter' atualizará automaticamente as informações na seção "Estatísticas adicionais", como mostrado abaixo (Número 1 e 2).
+		<br><img src = "img/builds_statChanged.png" id = "contentImg" width = "600" height = "300">
+		</p>
+		<button id = "scrollUpBtn" onclick = "scrollUp()">&#8963;</button>
+	</body>
+	<!-- FOOTER -->
+	<footer>
+		<span id = "version">SUN Calculator v1.3.3</span> | <span id = "publish">Publicado por Valiant</span> | <span id = "author">Criado por Katelyn Eitel</span>
+	</footer>
+	</div>
+</html>

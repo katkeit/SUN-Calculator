@@ -1,0 +1,92 @@
+[MENU BAR]
+FILE = File
+OPEN = 📂  Open...
+SAVE AS = 🖫  Save As...
+LANGUAGE = Language
+ENGLISH = 🇪🇳  English
+SPANISH = 🇪🇸  Español
+PORTUGUESE = 🇵🇹  Português
+OPTIONS = Options
+THEMES = 🎨  Themes
+LIGHT = ☀  Light Theme
+DARK = ☾  Dark Theme
+PREFERENCE = 📎  Preferences...
+HELP = Help
+TUTORIAL = ⓘ View tutorials...
+SUPPORT = ✉  Contact Support...
+UPDATE = ⟳ Check for Updates...
+ABOUT = ❔  About...
+
+[TABS]
+STATS = Stats
+
+[CLASS SELECTOR]
+TITLE = Class Selection
+DEFAULT = Choose a class...
+BERSERKER = Berserker
+DRAGON KNIGHT = Dragon Knight
+VALKYRIE = Valkyrie
+ELEMENTALIST = Elementalist
+SHADOW = Shadow
+MYSTIC = Mystic
+HELROID = Helroid
+WITCHBLADE = Witchblade
+
+[TIPS]
+TITLE = Tips
+
+[SYSTEM]
+TITLE = System Messages
+
+[CHAR INFORMATION]
+TITLE = Character Information
+
+[LEVEL]
+TITLE = Level
+
+[STATS]
+TITLE = Stats
+STR = STR
+AGI = AGI
+VIT = VIT
+INT = INT
+SPI = SPI
+
+[EXTRA POINTS]
+TITLE = Extra Points
+
+[ADD STATS 1]
+TITLE = Additional Stats
+SD = SD
+HP = HP
+SP = SP
+MP = MP
+BASIC DAMAGE = Basic Damage
+DEFENSE = Defense
+DEFENSE SUCCESS RATE = Defense Success Rate
+ATTACK SUCCESS RATE = Attack Success Rate
+ATTACK SPEED = Attack Speed
+CRITICAL CHANCE = Critical Chance
+SKILL ENHANCEMENT = Skill Enhancement
+INCREASE DEBUFF TIME = Increase Debuff Time
+
+[ADD STATS 2]
+TITLE = Continued Additional Stats
+
+[PREFERENCES]
+TITLE = Preferences
+LANGUAGE = Language
+ENGLISH = English
+SPANISH = Español
+PORTUGUESE = Português
+THEMES = Themes
+LIGHT = Light Theme
+DARK = Dark Theme
+BUTTON = Apply
+
+[ABOUT]
+TITLE = About
+INFORMATION = Information
+PROJECT = ❈ SUN Calculator v
+DEVELOPED = ❈ Developed by Katelyn Eitel
+DISCLAIMER = ❈ All trademarks and icons are intellectual property of Webzen INC. and I, Katelyn Eitel, and Valiant Guild (valiantguild.com) does not claim the rights. Contact us at admin@valiantguild.com if there are any issues regarding copyright.

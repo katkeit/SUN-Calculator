@@ -1,0 +1,109 @@
+[GENERAL]
+SKILL = [SKILL ENHANCEMENT] Starting at 4 INT, every class gets 3 Skill Enh. for every 4 INT, otherwise they receive 2 Skill Enh.
+DEBUFF = [INCREASE DEBUFF TIME] Starting at 3 SPI, every class gets .002 sec(s) for every 5 SPI, otherwise they receive .001 sec(s).
+
+[BERSERKER]
+BASIC = [BASIC DAMAGE] Berserker gets an extra 1 ~ 1 for every 6 STR and an extra 0 ~ 1 for every 2 STR.
+BASIC RANK = Berserkers have the best Basic Damage growth rate between all classes.
+HP = [HP] Berserker receives 11 HP per VIT.
+HP REC = [HP RECOVERY] For every 5 VIT, the Berserker receives +1 HP Recovery.
+
+---------------------------------------
+		STR
+---------------------------------------
+LOW
+----
+1) DRAGON KNIGHT (5)
+2) VALKYRIE / SHADOW (8)
+3) ELEMENTALIST (9)
+
+NOTE: N/A BERSERKER
+
+HIGH
+----
+1) BERSERKER (2)
+2) DRAGON KNIGHT (3)
+3) VALKYRIE / SHADOW, ELEMENTALIST (4)
+
+
+LOW AND HIGH
+-------------
+1) BERSERKER (6)
+2) DRAGON KNIGHT (15)
+
+NOTE: N/A VALKYRIE / SHADOW, ELEMENTALIST
+
+---------------------------------------
+		AGI
+---------------------------------------
+AS
+---
+1) BERSERKER (8)
+2) ELEMENTALIST (F, 9/10)
+3) DRAGON KNIGHT (T, 11/10)
+4) SHADOW (12)
+5) VALKYRIE (T, 13/14)
+
+ASR
+----
+1) DRAGON KNIGHT / VALKYRIE, ELEMENTALIST (T, 17/16, 9C)
+2) SHADOW / BERSERKER (F, 17/16, 11C)
+
+CC
+---
+1) SHADOW (T, 5/6, 1C)
+2) BERSERKER (F, 5/6, 0C)
+3) ELEMENTALIST (9+3)
+4) DRAGON KNIGHT (18+3)
+
+NOTE: N/A VALKYRIE - NEED INFO.
+
+---------------------------------------
+		VIT
+---------------------------------------
+HP GAINED (HIGH TO LOW)
+---------
+1) BERSERKER (11)
+2) DRAGON KNIGHT / VALKYRIE / SHADOW (9)
+3) ELEMENTALIST (7)
+
+DEFENSE
+-------
+1) BERSERKER / DRAGON KNIGHT (5)
+2) VALKYRIE (6)
+3) SHADOW (7)
+4) ELEMENTALIST (10)
+
+HPR
+---
+1) ELEMENTALIST (3)
+2) VALKYRIE (T, 4/3)
+3) DRAGON KNIGHT / SHADOW (4)
+4) BERSERKER (5)
+
+DSR
+---
+1) ALL CLASSES HAVE THE SAME GROWTH! (---)
+
+---------------------------------------
+		INT
+---------------------------------------
+1) ALL CLASSES HAVE THE SAME GROWTH
+
+---------------------------------------
+		SPI
+---------------------------------------
+MP GAINED
+----------
+1) ELEMENTALIST / SHADOW (6)
+2) VALKYRIE (5)
+3) DRAGON KNIGHT (4)
+4) BERSERKER (2)
+
+MPR
+---
+1) ALL CLASSES HAVE THE SAME GROWTH, EXCEPT BERSERKER!
+
+DAMAGE DEBUFF TIME
+-------------------
+1) ALL CLASSES HAVE THE SAME GROWTH!

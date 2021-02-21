@@ -1,0 +1,37 @@
+[BUILDLOADER]
+001 = ❈ Carregado com sucesso
+002 = ❈ A compilação foi salva com sucesso em
+003 = ❈ Erro: falha ao criar arquivo
+
+[CALC_LEVEL]
+001 = ❈ Erro: Não foi possível encontrar a classe para o nível de inicialização! Classe não existe! Nome da classe:
+
+[CALC_STATS]
+001 = ❈ Erro: Não foi possível encontrar a classe para inicializar estatísticas! Classe não existe! Nome da classe:
+002 = ❈ Erro: Não é possível validar a estatística escolhida! Stat não existe! Nome do Stat:
+003 = ❈ O número inserido
+004 = foi menor ou igual ao valor base de
+005 = era igual ao valor atual de
+
+[DISCLAIMER]
+001 = ❈ Isenção de responsabilidade: todas as marcas comerciais e ícones são de propriedade intelectual da Webzen Inc. Para obter mais informações, vá para Ajuda e, em seguida, Sobre no aplicativo.
+
+[FILEIO]
+001 = ❈ Erro: falha ao excluir
+
+[LANGUAGE]
+001 = ❈ Erro: Não foi possível encontrar
+002 = ❈ Carregamento concluído
+
+[TOOLTIPS]
+001 = ❈ Todas as dicas de ferramenta foram carregadas com sucesso.
+002 = ❈ Falha ao carregar todas as dicas de ferramentas.
+
+[UPDATER]
+001 = ❈ Verificando atualizações...
+002 = ❈ O aplicativo está na versão mais recente. Nenhuma atualização necessária.
+003 = Há uma nova atualização disponível. Deseja atualizar o aplicativo agora?
+004 = A atualização do aplicativo agora exigirá que o aplicativo seja fechado e reiniciado manualmente após a atualização.
+005 = Versão atualizada:
+006 = ❈ Atualização cancelada.
+007 = ❈ Erro: Não é possível verificar se há atualizações. Verifique a sua conexão com a internet. Entre em contato com o suporte se esse problema persistir.

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<!-- HEAD -->
+	<head>
+		<title>SUN Calculator Tutorial - Home</title>
+		
+		<meta charset = "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- COMMON CSS FILE -->
+		<link rel = "stylesheet" href = "css/template.css">
+		<!-- PAGE CSS -->
+		<link rel = "stylesheet" href = "css/build.css">
+		
+		<!-- SCROLL UP BUTTON -->
+		<link rel = "stylesheet" href = "css/scrollUpBtn.css">
+		<script src = "js/scrollUp.js"></script>
+	</head>
+	<div id = "wrapper">
+	<!-- NAVIGATION -->	
+	<nav class = "navbar">
+		<a class = "navImage"><img src="img/Sun.png" width = "20" height = "20"></a>
+		<a href="index.html">Home</a>
+		<div class="dropdown">
+			<button class = "dropbtn">Tutorials &#9662;</button>
+			<div class = "dropdown-content">
+				<a href= "basics.html">Basics</a>
+				<a href = "build.html">Builds</a>
+			</div>
+		</div>
+		<a href = "license.html">License</a>
+		<a href = "contact.html">Contact</a>
+	</nav> 
+	<!-- BODY -->
+	<body>
+		<h3 id = "title">Creating Character Builds</h3>
+		<div id = "contents">
+		<p id = "contentsTitle">Contents</p>
+		<ol>
+			<li><a href = "#selectClass">Selecting a class</a></li>
+			<li><a href = "#editLevel">Edit level</a></li>
+			<li><a href = "#editStats">Edit stats</a></li>
+		</ol>
+		</div>
+		<!-- SELECT A CLASS -->
+		<h4 id = "selectClass">❈ Selecting a class</h4>
+		<p> To start a character the user must select a class. Scroll over to the drop down box in the "Class Selection" section and click on the down arrow. A drop down menu will appear and now the user can select an available class.
+		<br><img src = "img/builds_selectClass.png" id = "contentImg" width = "220" height = "175">
+		<p> The subsection "Additional Stats" inside the main section "Character Information" will update to show the base stats for the selected character as shown below.
+		<br><img src = "img/builds_charInfo.png" id = "contentImg" width = "600" height = "300">
+		</p>
+		</p>
+		<!-- EDIT STATS -->
+		<h4 id = "editLevel">❈ Edit level</h4>
+		<p>Before the user can begin editing the stats, the user must edit the level inside box in the "Level" section. The user can click on the box, press 'Backspace' to remove the default '1', type any number from 1 to 195, and then press 'Enter'. Pressing 'Enter' will adjust the information inside the "Extra Points" and "Additional Stats" sections as show below.
+		<br><img src = "img/builds_levelChanged.png" id = "contentImg" width = "600" height = "300">
+		</p>
+		<!-- EDIT STATS -->
+		<h4 id = "editStats">❈ Edit stats</h4>
+		<p>The user can edit the stats inside the section "Stats" underneath the section "Level" by clicking inside the box to the right of the corresponding stat. From there, the user can 'Backspace' inside the box to remove any preset numbers, type in the numbers of their choice, and press 'Enter'. Pressing 'Enter' will automatically update the information in the "Additional Stats" section as shown below (Number 1 and 2).
+		<br><img src = "img/builds_statChanged.png" id = "contentImg" width = "600" height = "300">
+		</p>
+		<button id = "scrollUpBtn" onclick = "scrollUp()">&#8963;</button>
+	</body>
+	<!-- FOOTER -->
+	<footer>
+		<span id = "version">SUN Calculator v1.3.3</span> | <span id = "publish">Published by Valiant</span> | <span id = "author">Created by Katelyn Eitel</span>
+	</footer>
+	</div>
+</html>

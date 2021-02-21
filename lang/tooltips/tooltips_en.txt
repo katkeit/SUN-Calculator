@@ -1,0 +1,31 @@
+[CLASS SELECTOR]
+SELECTOR = Click the drop-down arrow and select a class of your choice.
+
+[LEVEL]
+LEVEL = A numerical value of the character's level between 1-195.
+
+[STATS]
+STR = Increases Basic Damage.
+AGI = Increases Attack Success Rate, Attack Speed, and Critical Chance.
+VIT = Increases Max HP, HP Recovery, Defense, and Defense Success Rate.
+INT = Increase Skill Enhancement.
+SPI = Increases Max MP/SP, MP/SP Recovery, and Damage Debuff Time.
+
+[EXTRA POINTS]
+POINTS = A character's extra stat points. Stat points are gained by leveling.
+
+[ADDITIONAL STATS]
+SD = An extra shield during PvP that will often be depleted before HP.
+HP = A character's life. If HP reaches 0, then the character will die.
+SPMP = A character's mana. If SP/MP reaches 0, then the character cannot use their skills.
+BASIC DAMAGE = The amount of damage a character afflicts when using auto-attacks.
+DEFENSE = The amount of damage a character negates when being attacked.
+DEF SUCCESS RATE = How often a character blocks auto-attacks.
+ATT SUCCESS RATE = How often a character auto-attacks a target.
+ATT SPEED = How fast a character auto-attacks a target.
+CRIT CHANCE = How often a character lands a critical hit.
+SKILL ENHANCEMENT = The amount of additional damage added to all skills.
+DEBUFF TIME = How long an afflicted damage debuff lasts (e.g burns, wounds, and poison).
+
+[SYSTEM MESSAGES]
+SYSTEM = This is where the application will display any messages (e.g. information, errors, etc).

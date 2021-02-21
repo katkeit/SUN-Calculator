@@ -1,0 +1,31 @@
+[CLASS SELECTOR]
+SELECTOR = Haga clic en la flecha desplegable y seleccione una clase de su elección.
+
+[LEVEL]
+LEVEL = Un valor numérico del nivel del personaje entre 1-195.
+
+[STATS]
+STR = Aumenta el daño básico.
+AGI = Aumenta la tasa de éxito del ataque, la velocidad de ataque y la probabilidad crítica.
+VIT = Aumenta la tasa de éxito máximo de HP, HP Recovery, Defense y Defense.
+INT = Aumenta la mejora de habilidades.
+SPI = Aumente el tiempo máximo de MP / SP, MP / SP Recovery y Debuff.
+
+[EXTRA POINTS]
+POINTS = Los puntos de estadísticas adicionales de un personaje. Los puntos de estadísticas se obtienen al subir de nivel.
+
+[ADDITIONAL STATS]
+SD = Un escudo adicional durante PvP y a menudo se agotará antes de HP.
+HP = La vida de un personaje. Si HP alcanza 0, el personaje morirá.
+SPMP = El maná de un personaje. Si SP / MP llega a 0, el personaje no puede usar sus habilidades.
+BASIC DAMAGE = La cantidad de daño que un personaje aflige cuando usa autoataques.
+DEFENSE = La cantidad de daño que un personaje niega cuando es atacado.
+DEF SUCCESS RATE = Con qué frecuencia un personaje bloquea los ataques automáticos.
+ATT SUCCESS RATE = Con qué frecuencia un personaje ataca automáticamente a un objetivo.
+ATT SPEED = Qué tan rápido un personaje ataca automáticamente a un objetivo.
+CRIT CHANCE = Con qué frecuencia un personaje consigue un golpe crítico.
+SKILL ENHANCEMENT = La cantidad de daño adicional agregado a todas las habilidades.
+DEBUFF TIME = Cuánto dura un perjuicio de daño afectado (por ejemplo, quemaduras, heridas y veneno).
+
+[SYSTEM MESSAGES]
+SYSTEM = Aquí es donde la aplicación mostrará cualquier mensaje (por ejemplo, información, errores, etc.).

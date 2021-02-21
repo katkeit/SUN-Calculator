@@ -1,0 +1,37 @@
+[BUILDLOADER]
+001 = ❈ Successfully loaded
+002 = ❈ Build was saved successfully to
+003 = ❈ Error: Failed to create file
+
+[CALC_LEVEL]
+001 = ❈ Error: Cannot find class for initializing level! Class doesn't exist! Class Name:
+
+[CALC_STATS]
+001 = ❈ Error: Cannot find class for initializing stats! Class doesn't exist! Class Name:
+002 = ❈ Error: Cannot validate the chosen stat! Stat doesn't exist! Stat Name:
+003 = ❈ The input number
+004 = was lower than or equal to the base value of
+005 = was equal to the current value of
+
+[DISCLAIMER]
+001 = ❈ Disclaimer: All trademarks and icons are intellectual property of Webzen Inc. For more information, go to Help, and then About in the application.
+
+[FILEIO]
+001 = ❈ Error: Failed to delete
+
+[LANGUAGE]
+001 = ❈ Error: Cannot find
+002 = ❈ Finished loading
+
+[TOOLTIPS]
+001 = ❈ Successfully loaded all tooltips.
+002 = ❈ Failed to load all tooltips.
+
+[UPDATER]
+001 = ❈ Checking for updates...
+002 = ❈ Application is at the latest version. No update needed.
+003 = There is a new update available. Do you want to update the application now?
+004 = Updating the application now will require the application to close and be manually restarted after updating.
+005 = Update Version:
+006 = ❈ Update cancelled.
+007 = ❈ Error: Cannot check for updates. Check your internet connection. Contact support if this issue continues to persist.

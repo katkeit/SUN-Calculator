@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<!-- HEAD -->
+	<head>
+		<title>SUN Calculator Tutorial - Basics</title>
+		
+		<meta charset = "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- COMMON CSS FILE -->
+		<link rel = "stylesheet" href = "css/template.css">
+		<!-- FOOTER DISAPPEARS ON SCROLL -->
+		<script src = "js/scrollFooter.js"></script>
+		<!-- PAGE CSS -->
+		<link rel = "stylesheet" href = "css/basics.css">
+		<!-- DISPLAY MESSAGES -->
+		<link rel = "stylesheet" href = "css/messages.css">
+		
+		<!-- SCROLL UP BUTTON -->
+		<link rel = "stylesheet" href = "css/scrollUpBtn.css">
+		<script src = "js/scrollUp.js"></script>
+	</head>
+	<div id = "wrapper">
+	<!-- NAVIGATION -->	
+	<nav class = "navbar">
+		<a class = "navImage"><img src="img/Sun.png" width = "20" height = "20"></a>
+		<a href="index.html">Home</a>
+		<div class="dropdown">
+			<button class = "dropbtn">Tutorials &#9662;</button>
+			<div class = "dropdown-content">
+				<a href= "basics.html">Basics</a>
+				<a href = "build.html">Builds</a>
+			</div>
+		</div>
+		<a href = "license.html">License</a>
+		<a href = "contact.html">Contact</a>
+	</nav> 
+	<!-- BODY -->
+	<body>
+		<h3 id = "title">Understanding the Basics</h3>
+		<div class="info"><img src = "img/info.png" class = "msgImg" width = "20" height = " 20">NOTE: This tutorial doesn't go over how to begin building for a specified class. Please check out the "Create Character <a href = "build.html">Builds</a>" tutorial.</div>
+		<div id = "contents">
+		<p id = "contentsTitle">Contents</p>
+		<ol>
+			<li><a href = "#openBuilds">Open saved builds</a></li>
+			<li><a href = "#saveBuilds">Save an in-progress build</a></li>
+			<li><a href = "#changeLang&Theme">Change the language and theme</a></li>
+			<li><a href = "#userPreferences">Change the user's preferences</a></li>
+			<li><a href = "#contactSupport">Contact support</a></li>
+			<li><a href = "#checkUpdates">Manually check for updates</a></li>
+		</ol>
+		</div>
+		<!-- OPEN SAVED BUILDS -->
+		<h4 id = "openBuilds">❈ Open saved builds</h4>
+		<p> In order to open a saved build, the user must have a saved file containing information about a character. This tutorial will use a file called "Saved_Berserker_Build.txt". You can download the zip that contains the text file from Valiant's website. <strong>Download</strong>: <a href = "http://valiantguild.com/wp-content/uploads/2020/02/SUN-Calc_Tutorial_Berserker-Build.zip">SUN Calc_Tutorial_Berserker Build.zip</a>.
+		</p>
+		<p>
+			To open a saved build from a text file, the user needs to go to File at the top left and click "Open...".
+			<br><img src = "img/basics_open.png" id = "contentImg" width = "200" height = "125" alt = "Go to top left corner, click File, and click Open...">
+		</p>
+		<p>
+			Another window will open and prompt the user to select a file. In this example, the tutorial will open a file called "Saved_Berserker_Build.txt" from the Desktop.
+			<br><img src = "img/basics_browse.png" id = "contentImg" width = "400" height = "300" alt = "Browse for the file and click Open.">
+		</p>
+		<p>
+			Click "Open" once the user has selected a file. The information inside the file will be loaded in the Calculator.
+			<br><img src = "img/basics_openComplete.png" id = "contentImg" width = "600" height = "400" alt = "Calculator will have loaded the information from txt file.">
+		</p>
+		<!-- SAVE A BUILD -->
+		<h4 id = "saveBuilds">❈ Save an in-progress build</h4>
+		<p>
+			To save a build the user must have selected a class from the drop down bar inside the "Class Selection" section before continuing on in this tutorial. To figure out how to select a class, please visit the "Create Character <a href = "builds.html">Builds</a>" tutorial.
+		</p>
+		<p> To save a build, the user must select File in the top left corner and click "Save As...".
+			<br><img src = "img/basics_save.png" id = "contentImg" width = "200" height = "125" alt = "Go to top left corner, click File, and click Save As...">
+		</p>
+		<p>
+			Another window will open and prompt the user to name the file and select a directory to save the file. If the user wishes to replace an existing file, then go to the directory the file exists and click the text file avaliable. In this example, the tutorial will save the file as "Saved_Beserker_Build".
+			<br><img src = "img/basics_savePrompt.png" id = "contentImg" width = "400" height = "300" alt = "Name the file and choose a directory to save the file in.">
+		</p>
+		<p>
+			Click Save and the Calculator will notify the user that the build has been saved into the specified file in the "System Messages" box.
+			<br><img src = "img/basics_saveComplete.png" id = "contentImg" width = "200" height = "200" alt = "System Messages box will show if the file saved successfully.">
+		</p>
+		<!-- CHANGE LANGUAGE AND THEME -->
+		<h4 id = "changeLang&Theme">❈ Change the language and theme</h4>
+		<p><strong>NOTE</strong>: The application can be changed to start up in a particular language or theme - to do this, the user needs to read the change the <a href = "#userPreferences">user's preferences</a> section of this tutorial.</p>
+		<p>To change the language, the user must click Language in the menu bar at the top and select a language in the drop down menu.
+			<br><img src = "img/basics_language.png" id = "contentImg" width = "200" height = "125"></p>
+		<p>To change the theme, the user must click Options in the menu bar at the top, scroll over Themes, and click a theme in the side menu.
+			<br><img src = "img/basics_theme.png" id = "contentImg" width = "350" height = "100"></p>
+		<!-- CHANGE USER'S PREFERENCES -->
+		<h4 id = "userPreferences">❈ Change the user's preferences</h4>
+		<p>
+			To change the application's start up preferences, click Options in the menu bar at the top and click "Preferences..." in the drop down menu.
+			<br><img src = "img/basics_preferences.png" id = "contentImg" width = "250" height = "125"></p>
+		<p>
+			A new window will popup and in this window the user can change any of the preferences. Click "Apply" in the bottom right corner of the window and application will save and adjust it's settings.
+			<br><img src = "img/basics_preferencesWindow.png" id = "contentImg" width = "500" height = "150">
+		</p>
+		<!-- CONTACT SUPPORT -->
+		<h4 id = "contactSupport">❈ Contact support</h4>
+		<p>
+			Click "Help" in the menu bar at the top of the application window. In the drop down menu, click "Contact Support...". This will bring the user to Valiant Guild's main <a href = "https://valiantguild.com/support/">website</a>.
+			<br><img src = "img/basics_contactSupport.png" id = "contentImg" width = "400" height = "150">
+		</p>
+		<p>
+			The website will launch in the default browser on the user's computer. The website will look like the image below. Please fill out the form and click "Submit".
+			<br><img src = "img/basics_contactSupportComplete.png" id = "contentImg" width = "600" height = "400">
+		</p>
+		<!-- CHECK UPDATES -->
+		<h4 id = "checkUpdates">❈ Manually check for updates</h4>
+		<p>
+			Click "Help" in the menu bar at the top of the application and click "Check for Updates..." in the drop down menu.
+			<br><img src = "img/basics_updates.png" id = "contentImg" width = "350" height = "150">
+		</p>
+		<p>
+			If there is an update needed, a popup window will appear and prompt the user to either click "Yes" or "No". Clicking "Yes" will cause the application to eventully close after starting the updater. Once the application is finished updating, then the user will need to manually restart the application.
+			<br><img src = "img/basics_updatesConfirm.png" id = "contentImg" width = "650" height = "150">
+		</p>
+		<p>
+			To comfirm whether the application is up to date, the user can check the "System Messages" box. The picture below displays what messages to expect.
+			<br><img src = "img/basics_updatesComplete.png" id = "contentImg" width = "250" height = "225">
+		</p>
+		<button id = "scrollUpBtn" onclick = "scrollUp()">&#8963;</button>
+	</body>
+	<!-- FOOTER -->
+	<footer>
+		<span id = "version">SUN Calculator v1.3.3</span> | <span id = "publish">Published by Valiant</span> | <span id = "author">Created by Katelyn Eitel</span>
+	</footer>
+	</div>
+</html>

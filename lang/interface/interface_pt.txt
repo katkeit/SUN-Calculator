@@ -1,0 +1,92 @@
+[MENU BAR]
+FILE = Arquivo
+OPEN = 📂  Aberto...
+SAVE AS = 🖫  Salvar como...
+LANGUAGE = Língua
+ENGLISH = 🇪🇳  English
+SPANISH = 🇪🇸  Español
+PORTUGUESE = 🇵🇹  Português 
+OPTIONS = Opções
+THEMES = 🎨  Temas
+LIGHT = ☀  Tema Luz
+DARK = ☾  Tema Escuro
+PREFERENCE = 📎  Preferências...
+HELP = Socorro
+TUTORIAL = ⓘ Ver tutoriais...
+SUPPORT = ✉  Entre em contato com o suporte...
+UPDATE = ⟳ Verificar atualizações...
+ABOUT = ❔  Sobre...
+
+[TABS]
+STATS = Estatísticas
+
+[CLASS SELECTOR]
+TITLE = Seleção de turma
+DEFAULT = Escolha uma turma...
+BERSERKER = Berserker
+DRAGON KNIGHT = Dragon Knight
+VALKYRIE = Valkyrie
+ELEMENTALIST = Elementalist
+SHADOW = Shadow
+MYSTIC = Mystic
+HELROID = Helroid
+WITCHBLADE = Witchblade
+
+[TIPS]
+TITLE = Dicas
+
+[SYSTEM]
+TITLE = Mensagens do Sistema
+
+[CHAR INFORMATION]
+TITLE = Informação do Personagem
+
+[LEVEL]
+TITLE = Nível
+
+[STATS]
+TITLE = Estatísticas
+STR = STR
+AGI = AGI
+VIT = VIT
+INT = INT
+SPI = SPI
+
+[EXTRA POINTS]
+TITLE = Pontos Extras
+
+[ADD STATS 1]
+TITLE = Estatísticas Adicionais
+SD = SD
+HP = HP
+SP = SP
+MP = MP
+BASIC DAMAGE = Dano Básico
+DEFENSE = Defesa
+DEFENSE SUCCESS RATE = Taxa de Sucesso de Defesa
+ATTACK SUCCESS RATE = Taxa de Sucesso de Ataque
+ATTACK SPEED = Velocidade de Ataque
+CRITICAL CHANCE = Chance Crítica
+SKILL ENHANCEMENT = Aperfeiçoamento de Habilidades
+INCREASE DEBUFF TIME = Aumentar o Tempo de Debuff
+
+[ADD STATS 2]
+TITLE = Estatísticas adicionais continuadas
+
+[PREFERENCES]
+TITLE = Preferências
+LANGUAGE = Língua
+ENGLISH = English
+SPANISH = Español
+PORTUGUESE = Português
+THEMES = Temas
+LIGHT = Tema Luz
+DARK = Tema Escuro
+BUTTON = Aplique
+
+[ABOUT]
+TITLE = Sobre
+INFORMATION = Em formação
+PROJECT = ❈ SUN Calculadora v
+DEVELOPED = ❈ Desenvolvido por Katelyn Eitel
+DISCLAIMER = ❈ Todas as marcas comerciais e ícones são de propriedade intelectual da Webzen INC. E eu, Katelyn Eitel e Valiant Guild (valiantguild.com) não reivindicam os direitos. Entre em contato com admin@valiantguild.com se houver algum problema relacionado a direitos autorais.

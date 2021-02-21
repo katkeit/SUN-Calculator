@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<!-- HEAD -->
+	<head>
+		<title>SUN Calculator Tutorial - Basics</title>
+		
+		<meta charset = "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- COMMON CSS FILE -->
+		<link rel = "stylesheet" href = "css/template.css">
+		<!-- FOOTER DISAPPEARS ON SCROLL -->
+		<script src = "js/scrollFooter.js"></script>
+		<!-- PAGE CSS -->
+		<link rel = "stylesheet" href = "css/basics.css">
+		<!-- DISPLAY MESSAGES -->
+		<link rel = "stylesheet" href = "css/messages.css">
+		
+		<!-- SCROLL UP BUTTON -->
+		<link rel = "stylesheet" href = "css/scrollUpBtn.css">
+		<script src = "js/scrollUp.js"></script>
+	</head>
+	<div id = "wrapper">
+	<!-- NAVIGATION -->	
+	<nav class = "navbar">
+		<a class = "navImage"><img src="img/Sun.png" width = "20" height = "20"></a>
+		<a href="index.html">Casa</a>
+		<div class="dropdown">
+			<button class = "dropbtn">Tutoriais &#9662;</button>
+			<div class = "dropdown-content">
+				<a href= "basics.html">Fundamentos</a>
+				<a href = "build.html">Constrói</a>
+			</div>
+		</div>
+		<a href = "license.html">Licença</a>
+		<a href = "contact.html">Contato</a>
+	</nav> 
+	<!-- BODY -->
+	<body>
+		<h3 id = "title">Compreendendo o básico</h3>
+		<div class="info"><img src = "img/info.png" class = "msgImg" width = "20" height = " 20">NOTA: Este tutorial não descreve como começar a criar para uma classe especificada. Por favor, confira o "Criar Personagem <a href = "build.html">Constrói</a>" tutorial.</div>
+		<div id = "contents">
+		<p id = "contentsTitle">Conteúdo</p>
+		<ol>
+			<li><a href = "#openBuilds">Abrir compilações salvas</a></li>
+			<li><a href = "#saveBuilds">Salvar uma compilação em andamento</a></li>
+			<li><a href = "#changeLang&Theme">Mude o idioma e o tema</a></li>
+			<li><a href = "#userPreferences">Alterar as preferências do usuário</a></li>
+			<li><a href = "#contactSupport">Entre em contato com o suporte</a></li>
+			<li><a href = "#checkUpdates">Verifique manualmente se há atualizações</a></li>
+		</ol>
+		</div>
+		<!-- OPEN SAVED BUILDS -->
+		<h4 id = "openBuilds">❈ Abrir compilações salvas</h4>
+		<p> Para abrir uma compilação salva, o usuário deve ter um arquivo salvo contendo informações sobre um caractere. Este tutorial usará um arquivo chamado "Saved_Berserker_Build.txt". Você pode fazer o download do zip que contém o arquivo de texto no site da Valiant. <strong>Baixar</strong>: <a href = "http://valiantguild.com/wp-content/uploads/2020/02/SUN-Calc_Tutorial_Berserker-Build.zip">SUN Calc_Tutorial_Berserker Build.zip</a>.
+		</p>
+		<p>
+			Para abrir uma compilação salva de um arquivo de texto, o usuário precisa ir para Arquivo no canto superior esquerdo e clicar em "Abrir ...".
+			<br><img src = "img/basics_open.png" id = "contentImg" width = "200" height = "125" alt = "Go to top left corner, click File, and click Open...">
+		</p>
+		<p>
+			Outra janela será aberta e solicitará que o usuário selecione um arquivo. Neste exemplo, o tutorial abrirá um arquivo chamado "Saved_Berserker_Build.txt" na área de trabalho.
+			<br><img src = "img/basics_browse.png" id = "contentImg" width = "400" height = "300" alt = "Browse for the file and click Open.">
+		</p>
+		<p>
+			Clique em "Abrir" quando o usuário selecionar um arquivo. As informações dentro do arquivo serão carregadas na calculadora.
+			<br><img src = "img/basics_openComplete.png" id = "contentImg" width = "600" height = "400" alt = "Calculator will have loaded the information from txt file.">
+		</p>
+		<!-- SAVE A BUILD -->
+		<h4 id = "saveBuilds">❈ Salvar uma compilação em andamento</h4>
+		<p>
+			Para salvar uma construção, o usuário deve ter selecionado uma classe na barra suspensa na seção "Seleção de classe" antes de continuar neste tutorial. Para descobrir como selecionar uma turma, visite o "Criar Personagem <a href = "builds.html">Constrói</a>" tutorial.
+		</p>
+		<p> Para salvar uma compilação, o usuário deve selecionar Arquivo no canto superior esquerdo e clicar em "Salvar como ...".
+			<br><img src = "img/basics_save.png" id = "contentImg" width = "200" height = "125" alt = "Go to top left corner, click File, and click Save As...">
+		</p>
+		<p>
+			Outra janela será aberta e solicitará que o usuário nomeie o arquivo e selecione um diretório para salvar o arquivo. Se o usuário desejar substituir um arquivo existente, vá para o diretório em que o arquivo existe e clique no arquivo de texto disponível. Neste exemplo, o tutorial salvará o arquivo como "Saved_Beserker_Build".
+			<br><img src = "img/basics_savePrompt.png" id = "contentImg" width = "400" height = "300" alt = "Name the file and choose a directory to save the file in.">
+		</p>
+		<p>
+			Clique em Salvar e a Calculadora notificará o usuário de que a compilação foi salva no arquivo especificado na caixa "Mensagens do sistema".
+			<br><img src = "img/basics_saveComplete.png" id = "contentImg" width = "200" height = "200" alt = "System Messages box will show if the file saved successfully.">
+		</p>
+		<!-- CHANGE LANGUAGE AND THEME -->
+		<h4 id = "changeLang&Theme">❈ Mude o idioma e o tema</h4>
+		<p><strong>NOTA</strong>: O aplicativo pode ser alterado para iniciar em um idioma ou tema específico - para isso, o usuário precisa ler a alteração <a href = "#userPreferences">preferências do usuário</a> seção deste tutorial.</p>
+		<p>Para alterar o idioma, o usuário deve clicar em Idioma na barra de menus na parte superior e selecionar um idioma no menu suspenso.
+			<br><img src = "img/basics_language.png" id = "contentImg" width = "200" height = "125"></p>
+		<p>Para alterar o tema, o usuário deve clicar em Opções na barra de menus na parte superior, rolar sobre Temas e clicar em um tema no menu lateral.
+			<br><img src = "img/basics_theme.png" id = "contentImg" width = "350" height = "100"></p>
+		<!-- CHANGE USER'S PREFERENCES -->
+		<h4 id = "userPreferences">❈ Alterar as preferências do usuário</h4>
+		<p>
+			Para alterar as preferências de inicialização do aplicativo, clique em Opções na barra de menus na parte superior e clique em "Preferências ..." no menu suspenso.
+			<br><img src = "img/basics_preferences.png" id = "contentImg" width = "250" height = "125"></p>
+		<p>
+			Uma nova janela será exibida e, nessa janela, o usuário poderá alterar qualquer uma das preferências. Clique em "Aplicar" no canto inferior direito da janela e o aplicativo salvará e ajustará suas configurações.
+			<br><img src = "img/basics_preferencesWindow.png" id = "contentImg" width = "500" height = "150">
+		</p>
+		<!-- CONTACT SUPPORT -->
+		<h4 id = "contactSupport">❈ Entre em contato com o suporte</h4>
+		<p>
+			Clique em "Ajuda" na barra de menus na parte superior da janela do aplicativo. No menu suspenso, clique em "Entre em contato com o suporte ...". Isso levará o usuário às principais instalações da Valiant Guild. <a href = "https://valiantguild.com/support/">Endereço Web</a>.
+			<br><img src = "img/basics_contactSupport.png" id = "contentImg" width = "400" height = "150">
+		</p>
+		<p>
+			O site será iniciado no navegador padrão no computador do usuário. O site será semelhante à imagem abaixo. Preencha o formulário e clique em enviar".
+			<br><img src = "img/basics_contactSupportComplete.png" id = "contentImg" width = "600" height = "400">
+		</p>
+		<!-- CHECK UPDATES -->
+		<h4 id = "checkUpdates">❈ Verifique manualmente se há atualizações</h4>
+		<p>
+			Clique em "Ajuda" na barra de menus na parte superior do aplicativo e clique em "Verificar atualizações ..." no menu suspenso.
+			<br><img src = "img/basics_updates.png" id = "contentImg" width = "350" height = "150">
+		</p>
+		<p>
+			Se for necessária uma atualização, uma janela pop-up será exibida e solicitará que o usuário clique em "Sim" ou "Não". Clicar em "Sim" fará com que o aplicativo seja fechado completamente depois de iniciar o atualizador. Depois que o aplicativo terminar de atualizar, o usuário precisará reiniciar o aplicativo manualmente.
+			<br><img src = "img/basics_updatesConfirm.png" id = "contentImg" width = "650" height = "150">
+		</p>
+		<p>
+			Para confirmar se o aplicativo está atualizado, o usuário pode marcar a caixa "Mensagens do sistema". A figura abaixo mostra quais mensagens devem ser esperadas.
+			<br><img src = "img/basics_updatesComplete.png" id = "contentImg" width = "250" height = "225">
+		</p>
+		<button id = "scrollUpBtn" onclick = "scrollUp()">&#8963;</button>
+	</body>
+	<!-- FOOTER -->
+	<footer>
+		<span id = "version">SUN Calculator v1.3.3</span> | <span id = "publish">Publicado por Valiant</span> | <span id = "author">Criado por Katelyn Eitel</span>
+	</footer>
+	</div>
+</html>

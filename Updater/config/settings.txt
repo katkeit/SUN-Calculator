@@ -1,0 +1,16 @@
+[VERSION]
+APP = 1.0.0
+
+[GENERAL]
+ICON = Sun.png
+CALC_PATH = C:/Users/katel/IdeaProjects/SUN Calculator/
+
+[INTERFACE]
+ENGLISH = lang/interface/interface_en.txt
+SPANISH = lang/interface/interface_es.txt
+
+[DOWNLOAD]
+FOLDER = download/
+VERSION = version.txt
+UPDATE_ZIP = SUN Calculator.zip
+

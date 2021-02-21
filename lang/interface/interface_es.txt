@@ -1,0 +1,92 @@
+[MENU BAR]
+FILE = Expediente
+OPEN = 📂 Abrir...
+SAVE AS = 🖫 Guardar como...
+LANGUAGE = Lenguaje
+ENGLISH = 🇪🇳  English
+SPANISH = 🇪🇸  Español
+PORTUGUESE = 🇵🇹  Português
+OPTIONS = Opciones
+THEMES = 🎨  Temas
+LIGHT = ☀  Tema Ligero
+DARK = ☾  Tema Oscuro
+PREFERENCE = 📎  Preferencia...
+HELP = Ayuda
+TUTORIAL = ⓘ Ver tutoriales...
+SUPPORT = ✉ Soporte de Contacto...
+UPDATE = ⟳ Buscar Actualizaciones...
+ABOUT = ❔ Acerca de...
+
+[TABS]
+STATS = Estadística
+
+[CLASS SELECTOR]
+TITLE = Selección de Clase
+DEFAULT = Elige una clase ...
+BERSERKER = Berserker
+DRAGON KNIGHT = Dragon Knight
+VALKYRIE = Valkyrie
+ELEMENTALIST = Elementalist
+SHADOW = Shadow
+MYSTIC = Mystic
+HELROID = Helroid
+WITCHBLADE = Witchblade
+
+[TIPS]
+TITLE = Consejos
+
+[SYSTEM]
+TITLE = Mensajes del Sistema
+
+[CHAR INFORMATION]
+TITLE = Informacion de Personaje
+
+[LEVEL]
+TITLE = Nivel
+
+[STATS]
+TITLE = Estadística
+STR = STR
+AGI = AGI
+VIT = VIT
+INT = INT
+SPI = SPI
+
+[EXTRA POINTS]
+TITLE = Puntos Extra
+
+[ADD STATS 1]
+TITLE = Estadísticas Adicionales
+SD = SD
+HP = HP
+SP = SP
+MP = MP
+BASIC DAMAGE = Daño Básico
+DEFENSE = Defensa
+DEFENSE SUCCESS RATE = Tasa de éxito de defensa
+ATTACK SUCCESS RATE = Tasa de éxito del ataque
+ATTACK SPEED = Velocidad de ataque
+CRITICAL CHANCE = Probabilidad crítica
+SKILL ENHANCEMENT = Mejora de habilidades
+INCREASE DEBUFF TIME = Aumenta el tiempo de debuff
+
+[ADD STATS 2]
+TITLE = Continuación de Estadísticas Adicionales
+
+[PREFERENCES]
+TITLE = Preferencia
+LANGUAGE = Lenguaje
+ENGLISH = English
+SPANISH = Español
+PORTUGUESE = Português
+THEMES = Temas
+LIGHT = Tema Ligero
+DARK = Tema Oscuro
+BUTTON = Aplicar
+
+[ABOUT]
+TITLE = Acerca de
+INFORMATION = Información
+PROJECT = ❈ SUN Calculadora v
+DEVELOPED = ❈ Desarrollado por Katelyn Eitel
+DISCLAIMER = ❈ Todas las marcas registradas e íconos son propiedad intelectual de Webzen Inc. y yo, Katelyn Eitel, y Valiant Guild (valiantguild.com) no reclaman los derechos. Póngase en contacto con nosotros en admin@valiantguild.com si hay algún problema relacionado con los derechos de autor.
