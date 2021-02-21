@@ -3,3 +3,4 @@
 [![Java CI with Maven](https://github.com/katkeit/SUN-Calculator/actions/workflows/maven.yml/badge.svg?branch=master)](https://github.com/katkeit/SUN-Calculator/actions/workflows/maven.yml)
 ![License](https://img.shields.io/github/license/katkeit/SUN-Calculator)
 ![Issues](https://img.shields.io/github/issues/katkeit/SUN-Calculator)
+> This calculator helps players create better stat and skill builds for Soul of the Ultimate Nation. The calculator supports English, Español, and Portugués.
