@@ -4,7 +4,9 @@
 [![Java CI with Maven](https://github.com/katkeit/SUN-Calculator/actions/workflows/maven.yml/badge.svg?branch=master)](https://github.com/katkeit/SUN-Calculator/actions/workflows/maven.yml)
 ![Issues](https://img.shields.io/github/issues/katkeit/SUN-Calculator)
 ![Size](https://img.shields.io/github/repo-size/katkeit/SUN-Calculator)
-> This calculator helps players create better stat and skill builds for Soul of the Ultimate Nation. The calculator supports English, Español, and Portugués.
+> This Java application is designed to help players create stat and skill builds for Soul of the Ultimate Nation (S.U.N Online).
+This application will support all eight (8) classes, both sides of the classes' skill builds, armor, accessories, and more.
+English, Español, and Português are currently supported by the application.
 
 ## Getting Started
 
