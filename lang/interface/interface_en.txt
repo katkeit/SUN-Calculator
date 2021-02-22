@@ -89,4 +89,4 @@ TITLE = About
 INFORMATION = Information
 PROJECT = ❈ SUN Calculator v
 DEVELOPED = ❈ Developed by Katelyn Eitel
-DISCLAIMER = ❈ All trademarks and icons are intellectual property of Webzen INC. and I, Katelyn Eitel, and Valiant Guild (valiantguild.com) does not claim the rights. Contact us at admin@valiantguild.com if there are any issues regarding copyright.
+DISCLAIMER = ❈ All trademarks and icons are intellectual property of Webzen INC. and I, Katelyn Eitel, does not claim the rights. Contact us at admin@valiantguild.com if there are any issues regarding copyright.

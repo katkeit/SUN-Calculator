@@ -31,7 +31,7 @@ SPANISH = lang/tutorial/es/index.html
 PORTUGUESE = lang/tutorial/pt/index.html
 
 [SUPPORT]
-LINK = www.valiantguild.com/support
+LINK = https://github.com/katkeit/SUN-Calculator/issues
 
 [LEVEL]
 MAX LEVEL = 195
@@ -41,4 +41,4 @@ MAX STAT = 1000
 
 [DOWNLOAD]
 FOLDER = update/download/
-LINK = https://valiantguild.com/wp-content/uploads/2020/01/version.txt
+LINK = https://pastebin.com/raw/4nypbbMd
