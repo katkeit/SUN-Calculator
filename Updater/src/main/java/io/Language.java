@@ -29,9 +29,6 @@ import java.util.ArrayList;
 
 public class Language
 {
-    private Wini ini;
-    private static FileIO io = new FileIO();
-
     private static ArrayList<String> updaterMessages = new ArrayList<>();
     private static ArrayList<String> downloaderMessages = new ArrayList<>();
     private static ArrayList<String> extractorMessages = new ArrayList<>();
@@ -49,18 +46,18 @@ public class Language
     {
         try
         {
-            this.ini = new Wini(new File(fileName));
+            Wini ini = new Wini(new File(fileName));
 
-            updaterMessages.add(this.ini.get("UPDATER", "001"));
-            updaterMessages.add(this.ini.get("UPDATER", "002"));
-            updaterMessages.add(this.ini.get("UPDATER", "003"));
-            updaterMessages.add(this.ini.get("UPDATER", "004"));
-            updaterMessages.add(this.ini.get("UPDATER", "005"));
-            updaterMessages.add(this.ini.get("UPDATER", "006"));
-            downloaderMessages.add(this.ini.get("DOWNLOADER", "001"));
-            downloaderMessages.add(this.ini.get("DOWNLOADER", "002"));
-            extractorMessages.add(this.ini.get("EXTRACTOR", "001"));
-            extractorMessages.add(this.ini.get("EXTRACTOR", "002"));
+            updaterMessages.add(ini.get("UPDATER", "001"));
+            updaterMessages.add(ini.get("UPDATER", "002"));
+            updaterMessages.add(ini.get("UPDATER", "003"));
+            updaterMessages.add(ini.get("UPDATER", "004"));
+            updaterMessages.add(ini.get("UPDATER", "005"));
+            updaterMessages.add(ini.get("UPDATER", "006"));
+            downloaderMessages.add(ini.get("DOWNLOADER", "001"));
+            downloaderMessages.add(ini.get("DOWNLOADER", "002"));
+            extractorMessages.add(ini.get("EXTRACTOR", "001"));
+            extractorMessages.add(ini.get("EXTRACTOR", "002"));
         }
         catch (IOException e) {
             e.printStackTrace();

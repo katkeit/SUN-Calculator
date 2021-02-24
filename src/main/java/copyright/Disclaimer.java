@@ -29,8 +29,6 @@ import java.util.TimerTask;
 
 public class Disclaimer
 {
-    private static FileIO io = new FileIO();
-
     public Disclaimer()
     {
         TimerTask task = new TimerTask() {

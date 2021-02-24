@@ -142,7 +142,8 @@ public class CalcLevel implements ActionListener, iCharacter
     private int calculateSD()
     {
         int sd = 201;
-        int sdCounter, sdAmount;
+        int sdCounter;
+        int sdAmount;
 
         sdCounter = 0;
         sdAmount = 1;

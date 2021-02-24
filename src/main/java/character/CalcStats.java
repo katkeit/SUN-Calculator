@@ -171,9 +171,8 @@ public class CalcStats implements ActionListener, iCharacter
     /* ------------------------------------------------------------------------------------------------------------- */
     private void calculateSTR(String className)
     {
-        JLabel lowValue = StatsTab.getBasicDamageLowValue();
-        JLabel highValue = StatsTab.getBasicDamageHighValue();
-        int lowDamage = 0, highDamage = 0;
+        int lowDamage = 0;
+        int highDamage = 0;
 
         switch(className)
         {
@@ -231,60 +230,8 @@ public class CalcStats implements ActionListener, iCharacter
             }
         }
 
-//        if(className.equals("Berserker"))
-//        {
-//            for(int i = 1; i <= inputStat; i++)
-//            {
-//                if((i % 6) == 0)
-//                {
-//                    lowDamage += 1;
-//                    highDamage += 1;
-//                }
-//                else if((i % 2) == 0)
-//                    highDamage += 1;
-//            }
-//        }
-//        else if(className.equals("Dragon Knight"))
-//        {
-//            for(int i = 1; i <= inputStat; i++)
-//            {
-//                if((i % 15) == 0)
-//                {
-//                    lowDamage += 1;
-//                    highDamage += 1;
-//                }
-//                else if ((i % 5) == 0)
-//                    lowDamage += 1;
-//                else if((i % 3) == 0)
-//                    highDamage += 1;
-//            }
-//        }
-//        else if(className.equals("Valkyrie") || className.equals("Shadow"))
-//        {
-//            for(int i = 0; i <= inputStat; i++)
-//            {
-//                if((i % 4) == 0)
-//                    highDamage += 1;
-//
-//                if((i % 8) == 0)
-//                    lowDamage += 1;
-//
-//            }
-//        }
-//        else if(className.equals("Elementalist"))
-//        {
-//            for(int i = 1; i <= inputStat; i++)
-//            {
-//                if((i % 4) == 0)
-//                    highDamage += 1;
-//
-//                if((i % 9) == 0)
-//                    lowDamage += 1;
-//            }
-//        }
-
-        lowValue.setText(String.valueOf(lowDamage));
-        highValue.setText(String.valueOf(highDamage));
+        StatsTab.getBasicDamageLowValue().setText(String.valueOf(lowDamage));
+        StatsTab.getBasicDamageHighValue().setText(String.valueOf(highDamage));
     }
 
     /* ------------------------------------------------------------------------------------------------------------- */
@@ -292,61 +239,32 @@ public class CalcStats implements ActionListener, iCharacter
     /* ------------------------------------------------------------------------------------------------------------- */
     private void calculateAGI(String className)
     {
-        JLabel attSuccessRate = StatsTab.getAttackSuccessValue();
-        JLabel attSpeed = StatsTab.getAttackSpeedValue();
-        JLabel critChance = StatsTab.getCritChanceValue();
-
-        int baseASR = 0, baseAS = 150, baseCC = 0;
-        int asCounter, ccCounter, ccPattern;
+        int attSuccessRate = 0;
+        int attSpeed = 150;
+        int critChance = 0;
 
         switch (className)
         {
             case "Berserker" -> {
-                baseAS = 150;
-                asCounter = 1;
-                baseASR = calcAttackSuccessRate(className, false, 11, 0);
-                baseCC = calcCriticalChance(className, 1, false, 0, 1);
-
-                for (int i = 1; i <= inputStat; i++)
-                {
-                    asCounter++;
-
-                    if ((asCounter % 8) == 0)
-                        baseAS += 1;
-                }
+                attSpeed = calcAttackSpeed(className, false, 0, 0, 0,0, attSpeed, 1);
+                attSuccessRate = calcAttackSuccessRate(className, false, 11, 0);
+                critChance = calcCriticalChance(className, 1, false, 0, 1, 0);
             }
             case "Dragon Knight" -> {
-                baseCC = 3;
-                ccPattern = 17;
-                ccCounter = 14;
-                int incCounter = 1;
-                baseAS = calcAttackSpeed(className, true, 2, 1, 11, 10, 150, 1);
-                baseASR = calcAttackSuccessRate(className, true, 9, 2);
-
-                for (int i = 1; i <= inputStat; i++)
-                {
-                    // ----------- Critical Chance -----------
-                    if (ccCounter == ccPattern) {
-                        baseCC += 1;
-
-                        if (ccPattern > 18)
-                            incCounter += 3;
-
-                        ccPattern += incCounter;
-                        ccCounter = 0;
-                    }
-
-                    ccCounter++;
-                }
+                attSpeed = calcAttackSpeed(className, true, 2, 1, 11, 10, attSpeed, 1);
+                attSuccessRate = calcAttackSuccessRate(className, true, 9, 2);
+                critChance = calcCriticalChance(className, 3, false, 14, 17, 1);
             }
             case "Valkyrie" -> {
-                baseCC = 1;
 //                ccCounter = 4;
+
 //                int maxIteration = 7;
 //                int increaseIteration = 1;
 
-                baseASR = calcAttackSuccessRate(className, true, 9, 2);
-                baseAS = calcAttackSpeed(className, true, 2, 1, 13, 14, 150, 0);
+                attSpeed = calcAttackSpeed(className, true, 2, 1, 13, 14, attSpeed, 0);
+                attSuccessRate = calcAttackSuccessRate(className, true, 9, 2);
+                // Check Pattern.
+                critChance = calcCriticalChance(className, 1, false, 4, 7,1);
 
 
                 //TODO: Fix Valk's CC. Need more information.
@@ -362,46 +280,20 @@ public class CalcStats implements ActionListener, iCharacter
 //                }
             }
             case "Elementalist" -> {
-                baseCC = 1;
-                ccCounter = 7;
-                int maxIteration = 9;
-                int increaseIteration = 3;
-
-                baseASR = calcAttackSuccessRate(className, true, 9, 2);
-                baseAS = calcAttackSpeed(className, false, 2, 1, 9, 10, 150, 1);
-
-                // baseCC = 1, ccCounter = 7, maxIteration = 9, increaseIteration = 3,
-                for (int i = 1; i <= inputStat; i++)
-                {
-                    if (ccCounter == maxIteration)
-                    {
-                        baseCC += 1;
-                        maxIteration += increaseIteration;
-                        increaseIteration += 1;
-                        ccCounter = 0;
-                    }
-
-                    ccCounter++;
-                }
+                attSpeed = calcAttackSpeed(className, false, 2, 1, 9, 10, attSpeed, 1);
+                attSuccessRate = calcAttackSuccessRate(className, true, 9, 2);
+                critChance = calcCriticalChance(className, 1, false, 7, 9, 3);
             }
             case "Shadow" -> {
-                asCounter = 1;
-                baseASR = calcAttackSuccessRate(className, false, 11, 0);
-                baseCC = calcCriticalChance(className, 2, true, 1, 5);
-
-                for (int i = 1; i <= inputStat; i++)
-                {
-                    if ((asCounter % 12) == 0)
-                        baseAS += 1;
-
-                    asCounter++;
-                }
+                attSpeed = calcAttackSpeed("Shadow", false, 0, 0, 0, 0, attSpeed, 1);
+                attSuccessRate = calcAttackSuccessRate(className, false, 11, 0);
+                critChance = calcCriticalChance(className, 2, true, 1, 5, 0);
             }
         }
 
-        attSuccessRate.setText(String.valueOf(baseASR));
-        attSpeed.setText(String.valueOf(baseAS));
-        critChance.setText(String.valueOf(baseCC));
+        StatsTab.getAttackSuccessValue().setText(String.valueOf(attSuccessRate));
+        StatsTab.getAttackSpeedValue().setText(String.valueOf(attSpeed));
+        StatsTab.getCritChanceValue().setText(String.valueOf(critChance));
     }
 
     /* ----------------------------------------------------------- */
@@ -421,7 +313,17 @@ public class CalcStats implements ActionListener, iCharacter
     {
         int asCounter = attSpeedCounter;
 
-        if(className.equals("Dragon Knight") || className.equals("Valkyrie") || className.equals("Elementalist"))
+        if(className.equals("Berserker"))
+        {
+            for (int i = 1; i <= inputStat; i++)
+            {
+                asCounter++;
+
+                if ((asCounter % 8) == 0)
+                    baseAS += 1;
+            }
+        }
+        else if(className.equals("Dragon Knight") || className.equals("Valkyrie") || className.equals("Elementalist"))
         {
             for(int i = 1; i <= inputStat; i++)
             {
@@ -449,6 +351,16 @@ public class CalcStats implements ActionListener, iCharacter
                 asCounter++;
             }
 
+        }
+        else if(className.equals("Shadow"))
+        {
+            for (int i = 1; i <= inputStat; i++)
+            {
+                if ((asCounter % 12) == 0)
+                    baseAS += 1;
+
+                asCounter++;
+            }
         }
 
         return baseAS;
@@ -517,10 +429,11 @@ public class CalcStats implements ActionListener, iCharacter
      * @param maxIteration What is the max iteration of the counter?
      * @return Returns an int of the class' Critical Chance % value.
      */
-    private int calcCriticalChance(String className, int baseCritChance, boolean fivePattern, int critChanceCounter, int maxIteration)
+    private int calcCriticalChance(String className, int baseCritChance, boolean fivePattern, int critChanceCounter, int maxIteration, int increaseCounter)
     {
         int baseCC = baseCritChance;
         int ccCounter = critChanceCounter;
+        int incCounter = increaseCounter;
 
         if(className.equals("Berserker") || className.equals("Shadow"))
         {
@@ -539,6 +452,40 @@ public class CalcStats implements ActionListener, iCharacter
                     maxIteration += 6;
                     ccCounter = 0;
                     fivePattern = true;
+                }
+
+                ccCounter++;
+            }
+        }
+        else if(className.equals("Dragon Knight"))
+        {
+            for (int i = 1; i <= inputStat; i++)
+            {
+                if (ccCounter == maxIteration)
+                {
+                    baseCC += 1;
+
+                    if (maxIteration > 18)
+                        incCounter += 3;
+
+                    maxIteration += incCounter;
+                    ccCounter = 0;
+                }
+
+                ccCounter++;
+            }
+        }
+        else if(className.equals("Elementalist"))
+        {
+            // baseCC = 1, ccCounter = 7, maxIteration = 9, increaseIteration = 3,
+            for (int i = 1; i <= inputStat; i++)
+            {
+                if (ccCounter == maxIteration)
+                {
+                    baseCC += 1;
+                    maxIteration += incCounter;
+                    incCounter += 1;
+                    ccCounter = 0;
                 }
 
                 ccCounter++;
@@ -713,22 +660,20 @@ public class CalcStats implements ActionListener, iCharacter
     /* ------------------------------------------------------------------------------------------------------------- */
     private void calculateINT()
     {
-        JLabel skillEnh = StatsTab.getSkillEnhValue();
-
-        int baseSkillEnh = 2;
+        int skillEnh = 2;
         int counter = 3;
 
         for(int i = 1; i < inputStat; i++)
         {
             if((counter % 4) == 0)
-                baseSkillEnh += 3;
+                skillEnh += 3;
             else
-                baseSkillEnh += 2;
+                skillEnh += 2;
 
             counter += 1;
         }
 
-        skillEnh.setText(String.valueOf(baseSkillEnh));
+        StatsTab.getSkillEnhValue().setText(String.valueOf(skillEnh));
     }
 
     /* ------------------------------------------------------------------------------------------------------------- */

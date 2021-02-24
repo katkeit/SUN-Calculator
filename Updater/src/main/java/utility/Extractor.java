@@ -57,9 +57,8 @@ public class Extractor
 
                 File parent = file.getParentFile();
 
-                if (parent != null)
-                        if(parent.mkdirs())
-                            continue;
+                if (parent != null && parent.mkdirs())
+                    continue;
 
                 InputStream is = zipFile.getInputStream(zipEntry);
                 FileOutputStream fos = new FileOutputStream(file);

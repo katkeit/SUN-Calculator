@@ -33,18 +33,15 @@ import java.nio.channels.ReadableByteChannel;
 
 public class Downloader
 {
-    private ReadableByteChannel readChannel;
-    private FileOutputStream fileOS;
-
     public boolean startDownload(String url, String fileName)
     {
         try
         {
             Interface.getLabel().setText(Language.getDownloaderMessages().get(0) + fileName + "...");
-            this.readChannel = Channels.newChannel((new URL(url)).openStream());
-            this.fileOS = new FileOutputStream(FileIO.getDownloadFolder() + fileName);
-            this.fileOS.getChannel().transferFrom(this.readChannel, 0L, Long.MAX_VALUE);
-            this.fileOS.close();
+            ReadableByteChannel readChannel = Channels.newChannel((new URL(url)).openStream());
+            FileOutputStream fileOS = new FileOutputStream(FileIO.getDownloadFolder() + fileName);
+            fileOS.getChannel().transferFrom(readChannel, 0L, Long.MAX_VALUE);
+            fileOS.close();
 
             Interface.getLabel().setText(Language.getDownloaderMessages().get(1) + fileName + "...");
             return true;
