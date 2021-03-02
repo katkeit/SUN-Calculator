@@ -44,7 +44,7 @@ package character;
    etc.
    --------------------------------------------------- */
 
-public interface iCharacter
+public interface ICharacter
 {
     // ------------ Berserker ------------
     String[] berserkerBaseStats = {"26", "13", "27", "4", "10"};
@@ -68,8 +68,7 @@ public interface iCharacter
     // [0] SD, [1] HP, [2] HP Rec, [3] SP, [4] SP Rec, [5] Low Damage, [6] High Damage, [7] Defense, [8] Add Defense,
     // [9] Def Success Rate, [10] Att Success Rate, [11] Attack Speed, [12] Critical Chance, [13] Skill Enh,
     // [14] Inc Debuff Time.
-    String[] valkBaseAddStats = {"201", "160", "0", "32", "2", "2", "4", "31", "0",
-            "1", "1", "151", "4", "16", "0.023"};
+    String[] valkBaseAddStats = {"201", "160", "0", "32", "2", "2", "4", "31", "0", "1", "1", "151", "4", "16", "0.023"};
     // SD, HP, HPR, SP, SPR
     Integer[] valkLevelGrowth = {1, 25, 1, 8, 0};
 

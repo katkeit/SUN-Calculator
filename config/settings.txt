@@ -1,6 +1,6 @@
 [VERSION]
 APP = 1.0.0
-CLIENT = 1904
+CLIENT = 2003
 
 [GENERAL]
 ICON = Sun.png
@@ -34,7 +34,7 @@ PORTUGUESE = lang/tutorial/pt/index.html
 LINK = https://github.com/katkeit/SUN-Calculator/issues
 
 [LEVEL]
-MAX LEVEL = 195
+MAX LEVEL = 200
 
 [STATS]
 MAX STAT = 1000

@@ -50,462 +50,218 @@ public class Theme implements ActionListener
             MenuBar.getItemLightTheme().setSelected(true);
             MenuBar.getItemDarkTheme().setSelected(false);
 
-            createLightTheme();
+            createTheme(Color.WHITE, Color.BLACK, Color.WHITE);
         }
         else if(theme.equals("DARK"))
         {
             MenuBar.getItemDarkTheme().setSelected(true);
             MenuBar.getItemLightTheme().setSelected(false);
 
-            createDarkTheme();
+            createTheme(Color.BLACK, Color.WHITE, Color.DARK_GRAY);
         }
     }
 
-    private void createLightTheme()
-    {
-        // Sets application's background to white.
-        Interface.getFrame().getContentPane().setBackground(Color.WHITE);
-        // Set StatsPanel's background to white.
-        StatsTab.getStatPanel().setBackground(Color.WHITE);
-        // Sets menu bar's background to white.
-        MenuBar.getMenuBar().setBackground(Color.WHITE);
-
-            /* --------------------
-                      File
-               -------------------- */
-        // Text color for main menu File was set to black.
-        MenuBar.getMenuFile().setForeground(Color.BLACK);
-        // Background color for submenu Open was set to white.
-        MenuBar.getItemOpen().setBackground(Color.WHITE);
-        // Text color for submenu Open was set to black.
-        MenuBar.getItemOpen().setForeground(Color.BLACK);
-        // Background color for submenu Save was set to white.
-        MenuBar.getItemSave().setBackground(Color.WHITE);
-        // Text color for submenu Save was set to black.
-        MenuBar.getItemSave().setForeground(Color.BLACK);
-
-             /* --------------------
-                     Language
-               -------------------- */
-        MenuBar.getMenuLanguage().setForeground(Color.BLACK);
-        MenuBar.getMenuLanguage().setBackground(Color.WHITE);
-        MenuBar.getItemEnglish().setForeground(Color.BLACK);
-        MenuBar.getItemEnglish().setBackground(Color.WHITE);
-        MenuBar.getItemSpanish().setForeground(Color.BLACK);
-        MenuBar.getItemSpanish().setBackground(Color.WHITE);
-        MenuBar.getItemPortuguese().setForeground(Color.BLACK);
-        MenuBar.getItemPortuguese().setBackground(Color.WHITE);
-
-            /* --------------------
-                   Options
-            -------------------- */
-        // Text color for main menu Option was set to black.
-        MenuBar.getMenuOption().setForeground(Color.BLACK);
-        // Background color for submenu Change Theme was set to white.
-        MenuBar.getMenuThemes().setBackground(Color.WHITE);
-        // Text color for submenu Change Theme was set to black.
-        MenuBar.getMenuThemes().setForeground(Color.BLACK);
-        MenuBar.getMenuThemes().setOpaque(true);
-
-        MenuBar.getItemLightTheme().setBackground(Color.WHITE);
-        MenuBar.getItemLightTheme().setForeground(Color.BLACK);
-
-        MenuBar.getItemDarkTheme().setBackground(Color.WHITE);
-        MenuBar.getItemDarkTheme().setForeground(Color.BLACK);
-
-        MenuBar.getItemPreferences().setForeground(Color.BLACK);
-        MenuBar.getItemPreferences().setBackground(Color.WHITE);
-
-            /* ---------------------
-                      Help
-               --------------------- */
-        MenuBar.getMenuHelp().setBackground(Color.WHITE);
-        MenuBar.getMenuHelp().setForeground(Color.BLACK);
-
-        MenuBar.getItemTutorial().setBackground(Color.WHITE);
-        MenuBar.getItemTutorial().setForeground(Color.BLACK);
-
-        MenuBar.getItemCheckUpdates().setBackground(Color.WHITE);
-        MenuBar.getItemCheckUpdates().setForeground(Color.BLACK);
-
-        MenuBar.getItemContactSupport().setBackground(Color.WHITE);
-        MenuBar.getItemContactSupport().setForeground(Color.BLACK);
-
-        MenuBar.getItemAbout().setBackground(Color.WHITE);
-        MenuBar.getItemAbout().setForeground(Color.BLACK);
-
-        /* ---------------------
-                  Tabs
-           --------------------- */
-        Interface.getTabs().setBackground(Color.WHITE);
-        Interface.getTabs().setForeground(Color.BLACK);
-
-        /* ---------------------
-               Left Section
-           --------------------- */
-        StatsTab.getCharPanel().setBackground(Color.WHITE);
-        StatsTab.getCharPanel().setForeground(Color.BLACK);
-        StatsTab.getSelectClass().setBackground(Color.WHITE);
-        StatsTab.getSelectClass().setForeground(Color.BLACK);
-        StatsTab.getSelectClassBorder().setTitleColor(Color.BLACK);
-
-        StatsTab.getTipsPanel().setBackground(Color.WHITE);
-        StatsTab.getTipsPanel().setForeground(Color.BLACK);
-        StatsTab.getTipsBorder().setTitleColor(Color.BLACK);
-
-        StatsTab.getTipsTextArea().setBackground(Color.WHITE);
-        StatsTab.getTipsTextArea().setForeground(Color.BLACK);
-
-        StatsTab.getSystemPanel().setBackground(Color.WHITE);
-        StatsTab.getSystemPanel().setForeground(Color.BLACK);
-        StatsTab.getSystemBorder().setTitleColor(Color.BLACK);
-
-        StatsTab.getSystemTextArea().setBackground(Color.WHITE);
-        StatsTab.getSystemTextArea().setForeground(Color.BLACK);
-
-        /* ---------------------
-              Center Section
-           --------------------- */
-        StatsTab.getCenterPanel().setBackground(Color.WHITE);
-        StatsTab.getCenterPanel().setForeground(Color.BLACK);
-        StatsTab.getCharInfoBorder().setTitleColor(Color.BLACK);
-
-        StatsTab.getGenCharPanel().setBackground(Color.WHITE);
-        StatsTab.getGenCharPanel().setForeground(Color.BLACK);
-
-        StatsTab.getLevelPanel().setBackground(Color.WHITE);
-        StatsTab.getLevelPanel().setForeground(Color.BLACK);
-        StatsTab.getLevelBorder().setTitleColor(Color.BLACK);
-        StatsTab.getTfLevel().setBackground(Color.WHITE);
-        StatsTab.getTfLevel().setForeground(Color.BLACK);
-
-        StatsTab.getBaseStatsPanel().setBackground(Color.WHITE);
-        StatsTab.getBaseStatsPanel().setForeground(Color.BLACK);
-        StatsTab.getBaseStatBorder().setTitleColor(Color.BLACK);
-
-        StatsTab.getTfSTR().setBackground(Color.WHITE);
-        StatsTab.getTfSTR().setForeground(Color.BLACK);
-        StatsTab.getLblSTR().setForeground(Color.BLACK);
-
-        StatsTab.getTfAGI().setBackground(Color.WHITE);
-        StatsTab.getTfAGI().setForeground(Color.BLACK);
-        StatsTab.getLblAGI().setForeground(Color.BLACK);
-
-        StatsTab.getTfVIT().setBackground(Color.WHITE);
-        StatsTab.getTfVIT().setForeground(Color.BLACK);
-        StatsTab.getLblVIT().setForeground(Color.BLACK);
-
-        StatsTab.getTfINT().setBackground(Color.WHITE);
-        StatsTab.getTfINT().setForeground(Color.BLACK);
-        StatsTab.getLblINT().setForeground(Color.BLACK);
-
-        StatsTab.getTfSPI().setBackground(Color.WHITE);
-        StatsTab.getTfSPI().setForeground(Color.BLACK);
-        StatsTab.getLblSPI().setForeground(Color.BLACK);
-
-        StatsTab.getRemainStatPanel().setBackground(Color.WHITE);
-        StatsTab.getRemainStatPanel().setForeground(Color.BLACK);
-        StatsTab.getRemainStatBorder().setTitleColor(Color.BLACK);
-        StatsTab.getRemainStatPoints().setForeground(Color.BLACK);
-
-        StatsTab.getAddStatsPanel().setBackground(Color.WHITE);
-        StatsTab.getAddStatsPanel().setForeground(Color.BLACK);
-        StatsTab.getAddStatBorder().setTitleColor(Color.BLACK);
-
-        StatsTab.getSd().setForeground(Color.BLACK);
-        StatsTab.getSdValue().setForeground(Color.BLACK);
-
-        StatsTab.getHp().setForeground(Color.BLACK);
-        StatsTab.getHpValue().setForeground(Color.BLACK);
-        StatsTab.getPlus1().setForeground(Color.BLACK);
-        StatsTab.getHpRecoveryValue().setForeground(Color.BLACK);
-
-        StatsTab.getSpMp().setForeground(Color.BLACK);
-        StatsTab.getSpMPValue().setForeground(Color.BLACK);
-        StatsTab.getPlus2().setForeground(Color.BLACK);
-        StatsTab.getSpMpRecoveryValue().setForeground(Color.BLACK);
-
-        StatsTab.getBasicDamage().setForeground(Color.BLACK);
-        StatsTab.getBasicDamageLowValue().setForeground(Color.BLACK);
-        StatsTab.getTilde().setForeground(Color.BLACK);
-        StatsTab.getBasicDamageHighValue().setForeground(Color.BLACK);
-        StatsTab.getPlus3().setForeground(Color.BLACK);
-        StatsTab.getAddBasicDamageValue().setForeground(Color.BLACK);
-
-        StatsTab.getDefense().setForeground(Color.BLACK);
-        StatsTab.getDefenseValue().setForeground(Color.BLACK);
-        StatsTab.getPlus4().setForeground(Color.BLACK);
-        StatsTab.getAddDefenseValue().setForeground(Color.BLACK);
-
-        StatsTab.getDefenseSuccess().setForeground(Color.BLACK);
-        StatsTab.getDefenseSuccessValue().setForeground(Color.BLACK);
-        StatsTab.getPercent1().setForeground(Color.BLACK);
-
-        StatsTab.getAttackSuccess().setForeground(Color.BLACK);
-        StatsTab.getAttackSuccessValue().setForeground(Color.BLACK);
-        StatsTab.getPercent2().setForeground(Color.BLACK);
-
-        StatsTab.getAttackSpeed().setForeground(Color.BLACK);
-        StatsTab.getAttackSpeedValue().setForeground(Color.BLACK);
-
-        StatsTab.getCritChance().setForeground(Color.BLACK);
-        StatsTab.getCritChanceValue().setForeground(Color.BLACK);
-        StatsTab.getPercent3().setForeground(Color.BLACK);
-
-        StatsTab.getSkillEnh().setForeground(Color.BLACK);
-        StatsTab.getSkillEnhValue().setForeground(Color.BLACK);
-
-        StatsTab.getIncDebuffTime().setForeground(Color.BLACK);
-        StatsTab.getIncDebuffTimeValue().setForeground(Color.BLACK);
-        StatsTab.getSeconds().setForeground(Color.BLACK);
-
-        StatsTab.getConAddPanel().setForeground(Color.BLACK);
-        StatsTab.getConAddPanel().setBackground(Color.WHITE);
-        StatsTab.getConAddBorder().setTitleColor(Color.BLACK);
-
-        // Update frame to show changes.
-        Interface.getFrame().revalidate();
-
-        /* -------------------------------------------------------------
-                            Preference Window
-           ------------------------------------------------------------- */
-        Preference.getFrame().setForeground(Color.BLACK);
-        Preference.getFrame().setBackground(Color.WHITE);
-        Preference.getPreferences().setTitleColor(Color.BLACK);
-        Preference.getPreferencePanel().setForeground(Color.BLACK);
-        Preference.getPreferencePanel().setBackground(Color.WHITE);
-        Preference.getLanguage().setTitleColor(Color.BLACK);
-        Preference.getLangPanel().setForeground(Color.BLACK);
-        Preference.getLangPanel().setBackground(Color.WHITE);
-        Preference.getThemes().setTitleColor(Color.BLACK);
-        Preference.getThemePanel().setForeground(Color.BLACK);
-        Preference.getThemePanel().setBackground(Color.WHITE);
-        Preference.getEnglish().setForeground(Color.BLACK);
-        Preference.getEnglish().setBackground(Color.WHITE);
-        Preference.getSpanish().setForeground(Color.BLACK);
-        Preference.getSpanish().setBackground(Color.WHITE);
-        Preference.getPortuguese().setForeground(Color.BLACK);
-        Preference.getPortuguese().setBackground(Color.WHITE);
-        Preference.getLightTheme().setForeground(Color.BLACK);
-        Preference.getLightTheme().setBackground(Color.WHITE);
-        Preference.getDarkTheme().setForeground(Color.BLACK);
-        Preference.getDarkTheme().setBackground(Color.WHITE);
-
-        Preference.getFrame().revalidate();
-
-        /* -------------------------------------------------------------
-                                About Window
-           ------------------------------------------------------------- */
-        About.getFrame().setBackground(Color.WHITE);
-        About.getAboutPanel().setBackground(Color.WHITE);
-        About.getAbout().setTitleColor(Color.BLACK);
-        About.getTextArea().setBackground(Color.WHITE);
-        About.getTextArea().setForeground(Color.BLACK);
-
-        About.getFrame().revalidate();
-    }
-
-    private void createDarkTheme()
+    private void createTheme(Color primaryColor, Color secondaryColor, Color accentColor)
     {
         // Sets application's background to black.
-        Interface.getFrame().getContentPane().setBackground(Color.BLACK);
+        Interface.getFrame().getContentPane().setBackground(primaryColor);
         // Set StatsPanel's background to black.
-        StatsTab.getStatPanel().setBackground(Color.BLACK);
+        StatsTab.getStatPanel().setBackground(primaryColor);
         // Sets menu bar's background to black.
-        MenuBar.getMenuBar().setBackground(Color.BLACK);
+        MenuBar.getMenuBar().setBackground(primaryColor);
 
             /* --------------------
                       File
                -------------------- */
         // Text color for main menu File was set to white.
-        MenuBar.getMenuFile().setForeground(Color.WHITE);
+        MenuBar.getMenuFile().setForeground(secondaryColor);
         // Background color for submenu Open was set to black.
-        MenuBar.getItemOpen().setBackground(Color.DARK_GRAY);
+        MenuBar.getItemOpen().setBackground(accentColor);
         // Text color for submenu Open was set to white.
-        MenuBar.getItemOpen().setForeground(Color.WHITE);
+        MenuBar.getItemOpen().setForeground(secondaryColor);
         // Background color for submenu Save was set to black.
-        MenuBar.getItemSave().setBackground(Color.DARK_GRAY);
+        MenuBar.getItemSave().setBackground(accentColor);
         // Text color for submenu Save was set to white.
-        MenuBar.getItemSave().setForeground(Color.WHITE);
+        MenuBar.getItemSave().setForeground(secondaryColor);
 
              /* --------------------
                      Language
                -------------------- */
-        MenuBar.getMenuLanguage().setForeground(Color.WHITE);
-        MenuBar.getMenuLanguage().setBackground(Color.BLACK);
-        MenuBar.getItemEnglish().setForeground(Color.WHITE);
-        MenuBar.getItemEnglish().setBackground(Color.DARK_GRAY);
-        MenuBar.getItemSpanish().setForeground(Color.WHITE);
-        MenuBar.getItemSpanish().setBackground(Color.DARK_GRAY);
-        MenuBar.getItemPortuguese().setForeground(Color.WHITE);
-        MenuBar.getItemPortuguese().setBackground(Color.DARK_GRAY);
+        MenuBar.getMenuLanguage().setForeground(secondaryColor);
+        MenuBar.getMenuLanguage().setBackground(primaryColor);
+        MenuBar.getItemEnglish().setForeground(secondaryColor);
+        MenuBar.getItemEnglish().setBackground(accentColor);
+        MenuBar.getItemSpanish().setForeground(secondaryColor);
+        MenuBar.getItemSpanish().setBackground(accentColor);
+        MenuBar.getItemPortuguese().setForeground(secondaryColor);
+        MenuBar.getItemPortuguese().setBackground(accentColor);
 
         /* --------------------
                  Options
            -------------------- */
         // Text color for main menu Option was set to white.
-        MenuBar.getMenuOption().setForeground(Color.WHITE);
+        MenuBar.getMenuOption().setForeground(secondaryColor);
         // Background color for menu Themes was set to black.
-        MenuBar.getMenuThemes().setBackground(Color.DARK_GRAY);
+        MenuBar.getMenuThemes().setBackground(accentColor);
         MenuBar.getMenuThemes().setOpaque(true);
         // Text color for menu Themes was set to white.
-        MenuBar.getMenuThemes().setForeground(Color.WHITE);
+        MenuBar.getMenuThemes().setForeground(secondaryColor);
 
-        MenuBar.getItemLightTheme().setBackground(Color.DARK_GRAY);
-        MenuBar.getItemLightTheme().setForeground(Color.WHITE);
+        MenuBar.getItemLightTheme().setBackground(accentColor);
+        MenuBar.getItemLightTheme().setForeground(secondaryColor);
 
-        MenuBar.getItemDarkTheme().setBackground(Color.DARK_GRAY);
-        MenuBar.getItemDarkTheme().setForeground(Color.WHITE);
+        MenuBar.getItemDarkTheme().setBackground(accentColor);
+        MenuBar.getItemDarkTheme().setForeground(secondaryColor);
 
-        MenuBar.getItemPreferences().setBackground(Color.DARK_GRAY);
-        MenuBar.getItemPreferences().setForeground(Color.WHITE);
+        MenuBar.getItemPreferences().setBackground(accentColor);
+        MenuBar.getItemPreferences().setForeground(secondaryColor);
 
         /* ---------------------
                   Help
            --------------------- */
-        MenuBar.getMenuHelp().setBackground(Color.BLACK);
-        MenuBar.getMenuHelp().setForeground(Color.WHITE);
+        MenuBar.getMenuHelp().setBackground(primaryColor);
+        MenuBar.getMenuHelp().setForeground(secondaryColor);
 
-        MenuBar.getItemTutorial().setBackground(Color.DARK_GRAY);
-        MenuBar.getItemTutorial().setForeground(Color.WHITE);
+        MenuBar.getItemTutorial().setBackground(accentColor);
+        MenuBar.getItemTutorial().setForeground(secondaryColor);
 
-        MenuBar.getItemCheckUpdates().setBackground(Color.DARK_GRAY);
-        MenuBar.getItemCheckUpdates().setForeground(Color.WHITE);
+        MenuBar.getItemCheckUpdates().setBackground(accentColor);
+        MenuBar.getItemCheckUpdates().setForeground(secondaryColor);
 
-        MenuBar.getItemContactSupport().setBackground(Color.DARK_GRAY);
-        MenuBar.getItemContactSupport().setForeground(Color.WHITE);
+        MenuBar.getItemContactSupport().setBackground(accentColor);
+        MenuBar.getItemContactSupport().setForeground(secondaryColor);
 
-        MenuBar.getItemAbout().setBackground(Color.DARK_GRAY);
-        MenuBar.getItemAbout().setForeground(Color.WHITE);
+        MenuBar.getItemAbout().setBackground(accentColor);
+        MenuBar.getItemAbout().setForeground(secondaryColor);
 
         /* ---------------------
                   Tabs
            --------------------- */
-        Interface.getTabs().setBackground(Color.BLACK);
-        Interface.getTabs().setForeground(Color.WHITE);
+        Interface.getTabs().setBackground(primaryColor);
+        Interface.getTabs().setForeground(secondaryColor);
 
         /* ---------------------
                Left Section
            --------------------- */
-        StatsTab.getCharPanel().setBackground(Color.BLACK);
-        StatsTab.getCharPanel().setForeground(Color.WHITE);
-        StatsTab.getSelectClass().setBackground(Color.DARK_GRAY);
-        StatsTab.getSelectClass().setForeground(Color.WHITE);
-        StatsTab.getSelectClassBorder().setTitleColor(Color.WHITE);
+        StatsTab.getCharPanel().setBackground(primaryColor);
+        StatsTab.getCharPanel().setForeground(secondaryColor);
+        StatsTab.getSelectClass().setBackground(accentColor);
+        StatsTab.getSelectClass().setForeground(secondaryColor);
+        StatsTab.getSelectClassBorder().setTitleColor(secondaryColor);
 
-        StatsTab.getTipsPanel().setBackground(Color.BLACK);
-        StatsTab.getTipsPanel().setForeground(Color.WHITE);
-        StatsTab.getTipsBorder().setTitleColor(Color.WHITE);
+        StatsTab.getTipsPanel().setBackground(primaryColor);
+        StatsTab.getTipsPanel().setForeground(secondaryColor);
+        StatsTab.getTipsBorder().setTitleColor(secondaryColor);
 
-        StatsTab.getTipsTextArea().setBackground(Color.DARK_GRAY);
-        StatsTab.getTipsTextArea().setForeground(Color.WHITE);
+        StatsTab.getTipsTextArea().setBackground(accentColor);
+        StatsTab.getTipsTextArea().setForeground(secondaryColor);
 
-        StatsTab.getSystemPanel().setBackground(Color.BLACK);
-        StatsTab.getSystemPanel().setForeground(Color.WHITE);
-        StatsTab.getSystemBorder().setTitleColor(Color.WHITE);
+        StatsTab.getSystemPanel().setBackground(primaryColor);
+        StatsTab.getSystemPanel().setForeground(secondaryColor);
+        StatsTab.getSystemBorder().setTitleColor(secondaryColor);
 
-        StatsTab.getSystemTextArea().setBackground(Color.DARK_GRAY);
-        StatsTab.getSystemTextArea().setForeground(Color.WHITE);
+        StatsTab.getSystemTextArea().setBackground(accentColor);
+        StatsTab.getSystemTextArea().setForeground(secondaryColor);
 
         /* ---------------------
               Center Section
            --------------------- */
-        StatsTab.getCenterPanel().setBackground(Color.BLACK);
-        StatsTab.getCenterPanel().setForeground(Color.WHITE);
-        StatsTab.getCharInfoBorder().setTitleColor(Color.WHITE);
+        StatsTab.getCenterPanel().setBackground(primaryColor);
+        StatsTab.getCenterPanel().setForeground(secondaryColor);
+        StatsTab.getCharInfoBorder().setTitleColor(secondaryColor);
 
-        StatsTab.getGenCharPanel().setBackground(Color.BLACK);
-        StatsTab.getGenCharPanel().setForeground(Color.WHITE);
+        StatsTab.getGenCharPanel().setBackground(primaryColor);
+        StatsTab.getGenCharPanel().setForeground(secondaryColor);
 
-        StatsTab.getLevelPanel().setBackground(Color.BLACK);
-        StatsTab.getLevelPanel().setForeground(Color.WHITE);
-        StatsTab.getLevelBorder().setTitleColor(Color.WHITE);
-        StatsTab.getTfLevel().setBackground(Color.DARK_GRAY);
-        StatsTab.getTfLevel().setForeground(Color.WHITE);
+        StatsTab.getLevelPanel().setBackground(primaryColor);
+        StatsTab.getLevelPanel().setForeground(secondaryColor);
+        StatsTab.getLevelBorder().setTitleColor(secondaryColor);
+        StatsTab.getTfLevel().setBackground(accentColor);
+        StatsTab.getTfLevel().setForeground(secondaryColor);
 
-        StatsTab.getBaseStatsPanel().setBackground(Color.BLACK);
-        StatsTab.getBaseStatsPanel().setForeground(Color.WHITE);
-        StatsTab.getBaseStatBorder().setTitleColor(Color.WHITE);
+        StatsTab.getBaseStatsPanel().setBackground(primaryColor);
+        StatsTab.getBaseStatsPanel().setForeground(secondaryColor);
+        StatsTab.getBaseStatBorder().setTitleColor(secondaryColor);
 
-        StatsTab.getTfSTR().setBackground(Color.DARK_GRAY);
-        StatsTab.getTfSTR().setForeground(Color.WHITE);
-        StatsTab.getLblSTR().setForeground(Color.WHITE);
+        StatsTab.getTfSTR().setBackground(accentColor);
+        StatsTab.getTfSTR().setForeground(secondaryColor);
+        StatsTab.getLblSTR().setForeground(secondaryColor);
 
-        StatsTab.getTfAGI().setBackground(Color.DARK_GRAY);
-        StatsTab.getTfAGI().setForeground(Color.WHITE);
-        StatsTab.getLblAGI().setForeground(Color.WHITE);
+        StatsTab.getTfAGI().setBackground(accentColor);
+        StatsTab.getTfAGI().setForeground(secondaryColor);
+        StatsTab.getLblAGI().setForeground(secondaryColor);
 
-        StatsTab.getTfVIT().setBackground(Color.DARK_GRAY);
-        StatsTab.getTfVIT().setForeground(Color.WHITE);
-        StatsTab.getLblVIT().setForeground(Color.WHITE);
+        StatsTab.getTfVIT().setBackground(accentColor);
+        StatsTab.getTfVIT().setForeground(secondaryColor);
+        StatsTab.getLblVIT().setForeground(secondaryColor);
 
-        StatsTab.getTfINT().setBackground(Color.DARK_GRAY);
-        StatsTab.getTfINT().setForeground(Color.WHITE);
-        StatsTab.getLblINT().setForeground(Color.WHITE);
+        StatsTab.getTfINT().setBackground(accentColor);
+        StatsTab.getTfINT().setForeground(secondaryColor);
+        StatsTab.getLblINT().setForeground(secondaryColor);
 
-        StatsTab.getTfSPI().setBackground(Color.DARK_GRAY);
-        StatsTab.getTfSPI().setForeground(Color.WHITE);
-        StatsTab.getLblSPI().setForeground(Color.WHITE);
+        StatsTab.getTfSPI().setBackground(accentColor);
+        StatsTab.getTfSPI().setForeground(secondaryColor);
+        StatsTab.getLblSPI().setForeground(secondaryColor);
 
-        StatsTab.getRemainStatPanel().setBackground(Color.BLACK);
-        StatsTab.getRemainStatPanel().setForeground(Color.WHITE);
-        StatsTab.getRemainStatBorder().setTitleColor(Color.WHITE);
-        StatsTab.getRemainStatPoints().setForeground(Color.WHITE);
+        StatsTab.getRemainStatPanel().setBackground(primaryColor);
+        StatsTab.getRemainStatPanel().setForeground(secondaryColor);
+        StatsTab.getRemainStatBorder().setTitleColor(secondaryColor);
+        StatsTab.getRemainStatPoints().setForeground(secondaryColor);
 
-        StatsTab.getAddStatsPanel().setBackground(Color.BLACK);
-        StatsTab.getAddStatsPanel().setForeground(Color.WHITE);
-        StatsTab.getAddStatBorder().setTitleColor(Color.WHITE);
+        StatsTab.getAddStatsPanel().setBackground(primaryColor);
+        StatsTab.getAddStatsPanel().setForeground(secondaryColor);
+        StatsTab.getAddStatBorder().setTitleColor(secondaryColor);
 
-        StatsTab.getSd().setForeground(Color.WHITE);
-        StatsTab.getSdValue().setForeground(Color.WHITE);
+        StatsTab.getSd().setForeground(secondaryColor);
+        StatsTab.getSdValue().setForeground(secondaryColor);
 
-        StatsTab.getHp().setForeground(Color.WHITE);
-        StatsTab.getHpValue().setForeground(Color.WHITE);
-        StatsTab.getPlus1().setForeground(Color.WHITE);
-        StatsTab.getHpRecoveryValue().setForeground(Color.WHITE);
+        StatsTab.getHp().setForeground(secondaryColor);
+        StatsTab.getHpValue().setForeground(secondaryColor);
+        StatsTab.getPlus1().setForeground(secondaryColor);
+        StatsTab.getHpRecoveryValue().setForeground(secondaryColor);
 
-        StatsTab.getSpMp().setForeground(Color.WHITE);
-        StatsTab.getSpMPValue().setForeground(Color.WHITE);
-        StatsTab.getPlus2().setForeground(Color.WHITE);
-        StatsTab.getSpMpRecoveryValue().setForeground(Color.WHITE);
+        StatsTab.getSpMp().setForeground(secondaryColor);
+        StatsTab.getSpMPValue().setForeground(secondaryColor);
+        StatsTab.getPlus2().setForeground(secondaryColor);
+        StatsTab.getSpMpRecoveryValue().setForeground(secondaryColor);
 
-        StatsTab.getBasicDamage().setForeground(Color.WHITE);
-        StatsTab.getBasicDamageLowValue().setForeground(Color.WHITE);
-        StatsTab.getTilde().setForeground(Color.WHITE);
-        StatsTab.getBasicDamageHighValue().setForeground(Color.WHITE);
-        StatsTab.getPlus3().setForeground(Color.WHITE);
-        StatsTab.getAddBasicDamageValue().setForeground(Color.WHITE);
+        StatsTab.getBasicDamage().setForeground(secondaryColor);
+        StatsTab.getBasicDamageLowValue().setForeground(secondaryColor);
+        StatsTab.getTilde().setForeground(secondaryColor);
+        StatsTab.getBasicDamageHighValue().setForeground(secondaryColor);
+        StatsTab.getPlus3().setForeground(secondaryColor);
+        StatsTab.getAddBasicDamageValue().setForeground(secondaryColor);
 
-        StatsTab.getDefense().setForeground(Color.WHITE);
-        StatsTab.getDefenseValue().setForeground(Color.WHITE);
-        StatsTab.getPlus4().setForeground(Color.WHITE);
-        StatsTab.getAddDefenseValue().setForeground(Color.WHITE);
+        StatsTab.getDefense().setForeground(secondaryColor);
+        StatsTab.getDefenseValue().setForeground(secondaryColor);
+        StatsTab.getPlus4().setForeground(secondaryColor);
+        StatsTab.getAddDefenseValue().setForeground(secondaryColor);
 
-        StatsTab.getDefenseSuccess().setForeground(Color.WHITE);
-        StatsTab.getDefenseSuccessValue().setForeground(Color.WHITE);
-        StatsTab.getPercent1().setForeground(Color.WHITE);
+        StatsTab.getDefenseSuccess().setForeground(secondaryColor);
+        StatsTab.getDefenseSuccessValue().setForeground(secondaryColor);
+        StatsTab.getPercent1().setForeground(secondaryColor);
 
-        StatsTab.getAttackSuccess().setForeground(Color.WHITE);
-        StatsTab.getAttackSuccessValue().setForeground(Color.WHITE);
-        StatsTab.getPercent2().setForeground(Color.WHITE);
+        StatsTab.getAttackSuccess().setForeground(secondaryColor);
+        StatsTab.getAttackSuccessValue().setForeground(secondaryColor);
+        StatsTab.getPercent2().setForeground(secondaryColor);
 
-        StatsTab.getAttackSpeed().setForeground(Color.WHITE);
-        StatsTab.getAttackSpeedValue().setForeground(Color.WHITE);
+        StatsTab.getAttackSpeed().setForeground(secondaryColor);
+        StatsTab.getAttackSpeedValue().setForeground(secondaryColor);
 
-        StatsTab.getCritChance().setForeground(Color.WHITE);
-        StatsTab.getCritChanceValue().setForeground(Color.WHITE);
-        StatsTab.getPercent3().setForeground(Color.WHITE);
+        StatsTab.getCritChance().setForeground(secondaryColor);
+        StatsTab.getCritChanceValue().setForeground(secondaryColor);
+        StatsTab.getPercent3().setForeground(secondaryColor);
 
-        StatsTab.getSkillEnh().setForeground(Color.WHITE);
-        StatsTab.getSkillEnhValue().setForeground(Color.WHITE);
+        StatsTab.getSkillEnh().setForeground(secondaryColor);
+        StatsTab.getSkillEnhValue().setForeground(secondaryColor);
 
-        StatsTab.getIncDebuffTime().setForeground(Color.WHITE);
-        StatsTab.getIncDebuffTimeValue().setForeground(Color.WHITE);
-        StatsTab.getSeconds().setForeground(Color.WHITE);
+        StatsTab.getIncDebuffTime().setForeground(secondaryColor);
+        StatsTab.getIncDebuffTimeValue().setForeground(secondaryColor);
+        StatsTab.getSeconds().setForeground(secondaryColor);
 
-        StatsTab.getConAddPanel().setForeground(Color.WHITE);
-        StatsTab.getConAddPanel().setBackground(Color.BLACK);
-        StatsTab.getConAddBorder().setTitleColor(Color.WHITE);
+        StatsTab.getConAddPanel().setForeground(secondaryColor);
+        StatsTab.getConAddPanel().setBackground(primaryColor);
+        StatsTab.getConAddBorder().setTitleColor(secondaryColor);
 
         // Update frame to show changes.
         Interface.getFrame().revalidate();
@@ -513,38 +269,38 @@ public class Theme implements ActionListener
         /* -------------------------------------------------------------
                             Preference Window
            ------------------------------------------------------------- */
-        Preference.getFrame().setForeground(Color.WHITE);
-        Preference.getFrame().setBackground(Color.BLACK);
-        Preference.getPreferences().setTitleColor(Color.WHITE);
-        Preference.getPreferencePanel().setForeground(Color.WHITE);
-        Preference.getPreferencePanel().setBackground(Color.BLACK);
-        Preference.getLanguage().setTitleColor(Color.WHITE);
-        Preference.getLangPanel().setForeground(Color.WHITE);
-        Preference.getLangPanel().setBackground(Color.BLACK);
-        Preference.getThemes().setTitleColor(Color.WHITE);
-        Preference.getThemePanel().setForeground(Color.WHITE);
-        Preference.getThemePanel().setBackground(Color.BLACK);
-        Preference.getEnglish().setForeground(Color.WHITE);
-        Preference.getEnglish().setBackground(Color.BLACK);
-        Preference.getSpanish().setForeground(Color.WHITE);
-        Preference.getSpanish().setBackground(Color.BLACK);
-        Preference.getPortuguese().setForeground(Color.WHITE);
-        Preference.getPortuguese().setBackground(Color.BLACK);
-        Preference.getLightTheme().setForeground(Color.WHITE);
-        Preference.getLightTheme().setBackground(Color.BLACK);
-        Preference.getDarkTheme().setForeground(Color.WHITE);
-        Preference.getDarkTheme().setBackground(Color.BLACK);
+        Preference.getFrame().setForeground(secondaryColor);
+        Preference.getFrame().setBackground(primaryColor);
+        Preference.getPreferences().setTitleColor(secondaryColor);
+        Preference.getPreferencePanel().setForeground(secondaryColor);
+        Preference.getPreferencePanel().setBackground(primaryColor);
+        Preference.getLanguage().setTitleColor(secondaryColor);
+        Preference.getLangPanel().setForeground(secondaryColor);
+        Preference.getLangPanel().setBackground(primaryColor);
+        Preference.getThemes().setTitleColor(secondaryColor);
+        Preference.getThemePanel().setForeground(secondaryColor);
+        Preference.getThemePanel().setBackground(primaryColor);
+        Preference.getEnglish().setForeground(secondaryColor);
+        Preference.getEnglish().setBackground(primaryColor);
+        Preference.getSpanish().setForeground(secondaryColor);
+        Preference.getSpanish().setBackground(primaryColor);
+        Preference.getPortuguese().setForeground(secondaryColor);
+        Preference.getPortuguese().setBackground(primaryColor);
+        Preference.getLightTheme().setForeground(secondaryColor);
+        Preference.getLightTheme().setBackground(primaryColor);
+        Preference.getDarkTheme().setForeground(secondaryColor);
+        Preference.getDarkTheme().setBackground(primaryColor);
 
         Preference.getFrame().revalidate();
 
         /* -------------------------------------------------------------
                                 About Window
            ------------------------------------------------------------- */
-        About.getFrame().setBackground(Color.BLACK);
-        About.getAboutPanel().setBackground(Color.BLACK);
-        About.getAbout().setTitleColor(Color.WHITE);
-        About.getTextArea().setBackground(Color.BLACK);
-        About.getTextArea().setForeground(Color.WHITE);
+        About.getFrame().setBackground(primaryColor);
+        About.getAboutPanel().setBackground(primaryColor);
+        About.getAbout().setTitleColor(secondaryColor);
+        About.getTextArea().setBackground(primaryColor);
+        About.getTextArea().setForeground(secondaryColor);
 
         About.getFrame().revalidate();
     }

@@ -36,21 +36,42 @@ public class MenuBar
     private final Utility utility = new Utility();
 
     // JMenuBar holds the JMenu and JMenuItem options.
-    static private JMenuBar menuBar = new JMenuBar();
+    private static final JMenuBar menuBar = new JMenuBar();
     // JMenu is a container for the JMenuItem(s).
-    static private JMenu menuFile, menuLanguage, menuOption, menuThemes, menuHelp;
+    private static JMenu menuFile;
+    private static JMenu menuLanguage;
+    private static JMenu menuOption;
+    private static JMenu menuThemes;
+    private static JMenu menuHelp;
     // JMenuItem holds each menu option.
-    static private JMenuItem itemOpen, itemSave, itemPreferences, itemTutorial, itemContactSupport, itemCheckUpdates, itemAbout;
-    static private JRadioButtonMenuItem itemEnglish, itemSpanish, itemPortuguese, itemLightTheme, itemDarkTheme;
+    private static JMenuItem itemOpen;
+    private static JMenuItem itemSave;
+    private static JMenuItem itemPreferences;
+    private static JMenuItem itemTutorial;
+    private static JMenuItem itemContactSupport;
+    private static JMenuItem itemCheckUpdates;
+    private static JMenuItem itemAbout;
+    private static JRadioButtonMenuItem itemEnglish;
+    private static JRadioButtonMenuItem itemSpanish;
+    private static JRadioButtonMenuItem itemPortuguese;
+    private static JRadioButtonMenuItem itemLightTheme;
+    private static JRadioButtonMenuItem itemDarkTheme;
 
     public JMenuBar initMenuBar()
     {
         // Preferred size of the menu bar.
         menuBar.setPreferredSize(new Dimension(800, 25));
 
-        /* ---------------------------------------------------------------------------------------------
-                                                FILE
-          --------------------------------------------------------------------------------------------- */
+        createFileMenu();
+        createLanguageMenu();
+        createOptionsMenu();
+        createHelpMenu();
+
+        return menuBar;
+    }
+
+    private void createFileMenu()
+    {
         // Create main menu option called File.
         menuFile = new JMenu("");
         // Add File menu option to the menu bar.
@@ -69,10 +90,10 @@ public class MenuBar
         // Add submenu Save to File menu (File -> Save).
         itemSave.addActionListener(new BuildLoader("Save As..."));
         menuFile.add(itemSave);
+    }
 
-        /* ---------------------------------------------------------------------------------------------
-                                                LANGUAGE
-          --------------------------------------------------------------------------------------------- */
+    private void createLanguageMenu()
+    {
         menuLanguage = new JMenu("");
 
         itemEnglish = new JRadioButtonMenuItem("");
@@ -88,10 +109,10 @@ public class MenuBar
         menuLanguage.add(itemPortuguese);
 
         menuBar.add(menuLanguage);
+    }
 
-        /* ---------------------------------------------------------------------------------------------
-                                                OPTIONS
-          --------------------------------------------------------------------------------------------- */
+    private void createOptionsMenu()
+    {
         // Create Option menu.
         menuOption = new JMenu("");
 
@@ -116,10 +137,10 @@ public class MenuBar
 
         menuOption.add(itemPreferences);
         menuBar.add(menuOption);
+    }
 
-        /* ---------------------------------------------------------------------------------------------
-                                                    HELP
-          --------------------------------------------------------------------------------------------- */
+    private void createHelpMenu()
+    {
         menuHelp = new JMenu("");
 
         itemTutorial = new JMenuItem("");
@@ -148,8 +169,6 @@ public class MenuBar
 
         menuHelp.add(itemAbout);
         menuBar.add(menuHelp);
-
-        return menuBar;
     }
 
     /* ----------------------

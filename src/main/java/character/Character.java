@@ -23,9 +23,9 @@ package character;
 
 import gui.components.StatsTab;
 
-public class Character implements iCharacter
+public class Character implements ICharacter
 {
-    private String className;
+    private final String className;
 
     public Character(String className)
     {

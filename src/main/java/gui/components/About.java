@@ -31,8 +31,6 @@ import java.awt.event.ActionListener;
 
 public class About implements ActionListener
 {
-    private FileIO fileIO = new FileIO();
-
     private static JFrame frame = new JFrame();
     private static JPanel aboutPanel = new JPanel();
     private static TitledBorder about = new TitledBorder("");

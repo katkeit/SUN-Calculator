@@ -83,12 +83,12 @@ HPR
 
 DSR
 ---
-1) ALL CLASSES HAVE THE SAME GROWTH! (---)
+1) ALL CLASSES HAVE THE SAME GROWTH!
 
 ---------------------------------------
 		INT
 ---------------------------------------
-1) ALL CLASSES HAVE THE SAME GROWTH
+1) ALL CLASSES HAVE THE SAME GROWTH!
 
 ---------------------------------------
 		SPI

@@ -29,7 +29,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class CalcStats implements ActionListener, iCharacter
+public class CalcStats implements ActionListener, ICharacter
 {
     private String statName;
     private int baseSTR, baseAGI, baseVIT, baseINT, baseSPI, inputStat, previousStat = -1;

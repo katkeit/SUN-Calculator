@@ -32,11 +32,8 @@ import java.awt.*;
 
 public class Interface
 {
-    private FileIO fileIO = new FileIO();
-    private Language language;
-    private Theme theme;
-    private MenuBar menu = new MenuBar();
-    private TabManager tabManager = new TabManager();
+    private final MenuBar menu = new MenuBar();
+    private final TabManager tabManager = new TabManager();
 
     // Entire frame of the GUI.
     private static JFrame frame = new JFrame();
@@ -77,10 +74,10 @@ public class Interface
         // Put the tabs underneath the menu bar.
         frame.add(tabs, BorderLayout.CENTER);
 
-        language = new Language(FileIO.getPrefLanguage());
+        Language language = new Language(FileIO.getPrefLanguage());
         language.setLanguage();
 
-        theme = new Theme(FileIO.getPrefTheme());
+        Theme theme = new Theme(FileIO.getPrefTheme());
         theme.initTheme();
 
         // Pack and set frame to visible.

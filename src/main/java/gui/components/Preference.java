@@ -33,23 +33,23 @@ import java.awt.event.ActionListener;
 public class Preference implements ActionListener
 {
     private static JFrame frame = new JFrame();
-    private static TitledBorder preferences = new TitledBorder("");
-    private static TitledBorder language = new TitledBorder("");
-    private static TitledBorder themes = new TitledBorder("");
-    private static JPanel preferencePanel = new JPanel();
-    private static JPanel langPanel = new JPanel();
-    private static JPanel themePanel = new JPanel();
-    private static ButtonGroup langGroup = new ButtonGroup();
-    private static ButtonGroup themeGroup = new ButtonGroup();
-    private static JRadioButton english = new JRadioButton("");
-    private static JRadioButton spanish = new JRadioButton("");
-    private static JRadioButton portuguese = new JRadioButton("");
-    private static JRadioButton lightTheme = new JRadioButton();
-    private static JRadioButton darkTheme = new JRadioButton("");
-    private static GridBagConstraints gbc = new GridBagConstraints();
-    private static JButton applyButton = new JButton("");
+    private static final TitledBorder preferences = new TitledBorder("");
+    private static final TitledBorder language = new TitledBorder("");
+    private static final TitledBorder themes = new TitledBorder("");
+    private static final JPanel preferencePanel = new JPanel();
+    private static final JPanel langPanel = new JPanel();
+    private static final JPanel themePanel = new JPanel();
+    private static final ButtonGroup langGroup = new ButtonGroup();
+    private static final ButtonGroup themeGroup = new ButtonGroup();
+    private static final JRadioButton english = new JRadioButton("");
+    private static final JRadioButton spanish = new JRadioButton("");
+    private static final JRadioButton portuguese = new JRadioButton("");
+    private static final JRadioButton lightTheme = new JRadioButton();
+    private static final JRadioButton darkTheme = new JRadioButton("");
+    private static final GridBagConstraints gbc = new GridBagConstraints();
+    private static final JButton applyButton = new JButton("");
 
-    private static FileIO fileIO = new FileIO();
+    private static final FileIO fileIO = new FileIO();
 
     @Override
     public void actionPerformed(ActionEvent e)
@@ -116,7 +116,7 @@ public class Preference implements ActionListener
         gbc.gridx = 1;
         gbc.gridy = 1;
         gbc.anchor = GridBagConstraints.EAST;
-        applyButton.addActionListener(new setPreferences());
+        applyButton.addActionListener(new SetPreferences());
         preferencePanel.add(applyButton, gbc);
 
         frame.add(preferencePanel);
@@ -126,15 +126,16 @@ public class Preference implements ActionListener
         frame.setVisible(true);
     }
 
-    private static class setPreferences implements ActionListener
+    private static class SetPreferences implements ActionListener
     {
-        private String preferredLang = "";
-        private String preferredTheme = "";
-        String[] settings = new String[2];
+        private final String[] settings = new String[2];
 
         @Override
         public void actionPerformed(ActionEvent e)
         {
+            String preferredLang = "";
+            String preferredTheme = "";
+
             if(english.isSelected())
                 preferredLang = "EN";
             else if(spanish.isSelected())

@@ -28,7 +28,7 @@ import utility.Convert;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class CalcLevel implements ActionListener, iCharacter
+public class CalcLevel implements ActionListener, ICharacter
 {
     private String className;
     private int currentLevel = 0;
