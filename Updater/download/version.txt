@@ -1,7 +1,0 @@
-[CALCULATOR]
-VERSION = 1.3.2
-DOWNLOAD = http://valiantguild.com/wp-content/uploads/2020/01/v132-update.zip
-
-[UPDATER]
-VERSION = 1.0.0
-PAGE = https://valiantguild.com/downloads/sun-calculator/
